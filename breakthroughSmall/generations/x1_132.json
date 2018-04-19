@@ -1,0 +1,19 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2018/02/21 00:32",
+        "game": "breakthroughSmall",
+        "multiple_policy_heads": true,
+        "name": "x1_132",
+        "num_previous_states": 1,
+        "trained_losses": "not set",
+        "trained_policy_accuracy": "not set",
+        "trained_validation_losses": "not set",
+        "trained_value_accuracy": "not set",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
