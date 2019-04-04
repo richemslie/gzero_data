@@ -14,4 +14,13 @@ Trained at approx ggp-zero commit [5566375](https://github.com/ggplib/ggp-zero/c
 Special thanks to Richard Lorentz for entertaining a mini competition to evaluate the strength of
 models/bot on LG.
 
+----
+
+ICGA model: x6_164
+
+experimental best model: kt1_206
+
+<img src="breakthrough/elo.png" width="75%">
+
+
 

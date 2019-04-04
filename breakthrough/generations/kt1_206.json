@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/03/18 13:33",
+        "draw_head": false,
+        "game": "breakthrough",
+        "multiple_policy_heads": true,
+        "name": "kt1_206",
+        "num_previous_states": 1,
+        "trained_losses": "not set",
+        "trained_policy_accuracy": "not set",
+        "trained_validation_losses": "not set",
+        "trained_value_accuracy": "not set",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
