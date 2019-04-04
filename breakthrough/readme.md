@@ -37,12 +37,13 @@ kt - runs are all full matches, no expert iteration.
 
 kt1 - was hand tweaked config, with continuously upping the size of the network
 
-kt3/kt5 - fixed config of ~200 evals per move (XXX need to check).  kt3 used oscillating move
-generation (taking 20% of moves) - whereas kt5 is full matches (taking 100% of moves).  network was
-enlarged during run.
+kt3/az1 - ran with largely fixed, same config of ~200 evals per move (XXX need to check).  kt3 used
+oscillating move generation (taking 20% of moves) - whereas az1 is full matches (ie AlphaZero
+method, taking 100% of moves).  network was enlarged during run.  Suprising similar results, need
+to double check.
 
-az1 - configured with a very small network, and ran with maximum number evals so continuously
-train (ran for about 20 hours on 3 gpus).
+kt5 - configured with a very small network, and ran with maximum number evals so could continuously
+train, and just left to run unattened for for 3 days (with 3 gpus).
 
 *Conclusion: quantity of data triumphs quality - as long train early & train often*
 
