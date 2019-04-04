@@ -1,0 +1,452 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Hex
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; components
+
+;; red -> black
+;; blue -> white
+;; pos row/column -> letter/number
+;; black connects to a-k, left to right
+;; white connects to 1-11, bottom to top
+;; swap -> swaps piece coords and colour... that is all
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (role black)
+  (role white)
+
+  (<= (base (cell ?m ?n ?role))
+      (row ?m)
+      (col ?n)
+      (role ?role))
+
+  (<= (base (connected ?k ?m ?n))
+      (succ ?k ?o)
+      (row ?m)
+      (col ?n))
+
+  (<= (base (owner ?k ?role))
+      (succ ?k ?o)
+      (role ?role))
+
+  (<= (base (step ?k))
+      (succ ?k ?o))
+
+  (<= (base (control ?role))
+      (role ?role))
+
+  (base canSwap)
+
+  (<= (input ?role (place ?m ?n))
+      (role ?role)
+      (row ?m)
+      (col ?n))
+
+  (<= (input ?role noop)
+      (role ?role))
+
+  (input white swap)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; init
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (init (control black))
+  (init (step 1))
+  (init canSwap)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; legal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (<= (legal ?role (place ?m ?n))
+      (true (control ?role))
+      (row ?m)
+      (col ?n)
+      (not (true (cell ?m ?n black)))
+      (not (true (cell ?m ?n white))))
+
+  (<= (legal white swap)
+      (true (control white))
+      (true canSwap))
+
+  (<= (legal black noop)
+      (true (control white)))
+
+  (<= (legal white noop)
+      (true (control black)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; next
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (<= (next canSwap)
+      (true canSwap)
+      (does white noop))
+
+  (<= (next (cell ?m ?n ?role))
+      (does ?role (place ?m ?n)))
+
+  (<= (next (cell ?m ?n ?role))
+      (not (does white swap))
+      (true (cell ?m ?n ?role)))
+
+  (<= (next (cell ?m ?n white))
+      (does white swap)
+      (true (cell ?x ?y black))
+      (swapaxis ?m ?y)
+      (swapaxis ?x ?n))
+
+  (<= (next (step ?n))
+      (true (step ?m))
+      (succ ?m ?n))
+
+  (<= (next (owner ?k ?role))
+      (true (step ?k))
+      (true (control ?role)))
+
+  (<= (next (owner ?k ?role))
+      (not (does white swap))
+      (true (owner ?k ?role)))
+
+  (<= (next (connected ?k ?m ?n))
+      (does ?role (place ?m ?n))
+      (true (step ?k)))
+
+  (<= (next (connected ?k ?m ?n))
+      (not (does white swap))
+      (transfer ?e)
+      (true (connected ?e ?m ?n))
+      (true (step ?k)))
+
+  (<= (next (connected ?k ?m ?n))
+      (not (does white swap))
+      (true (connected ?k ?m ?n))
+      (not (transfer ?k)))
+
+  (<= (next (connected 2 ?m ?n))
+      (does white swap)
+      (true (connected 1 ?x ?y))
+      (swapaxis ?m ?y)
+      (swapaxis ?x ?n))
+
+  (<= (next (control black))
+      (true (control white)))
+
+  (<= (next (control white))
+      (true (control black)))
+
+  (<= (transfer ?k)
+      (does ?role (place ?x ?y))
+      (true (owner ?k ?role))
+      (true (connected ?k ?m ?n))
+      (adjacent ?x ?y ?m ?n))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; goal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (<= (goal black 100) blackpath)
+  (<= (goal black 0) (not blackpath))
+
+  (<= (goal white 100) whitepath)
+  (<= (goal white 0) (not whitepath))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; terminal
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (<= terminal blackpath)
+  (<= terminal whitepath)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Views
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (<= (adjacent ?j ?k ?j ?n)
+      (nextcol ?k ?n)
+      (row ?j))
+
+  (<= (adjacent ?j ?k ?j ?n)
+      (nextcol ?n ?k)
+      (row ?j))
+
+  (<= (adjacent ?j ?k ?m ?k)
+      (nextrow ?j ?m)
+      (col ?k))
+
+  (<= (adjacent ?j ?k ?m ?k)
+      (nextrow ?m ?j)
+      (col ?k))
+
+  (<= (adjacent ?j ?k ?m ?n)
+      (nextrow ?m ?j)
+      (nextcol ?k ?n))
+
+  (<= (adjacent ?j ?k ?m ?n)
+      (nextrow ?j ?m)
+      (nextcol ?n ?k))
+
+  (<= blackpath
+      (true (connected ?k ?i 1))
+      (true (connected ?k ?j 13))
+      (true (owner ?k black)))
+
+  (<= whitepath
+      (true (connected ?k a ?i))
+      (true (connected ?k m ?j))
+      (true (owner ?k white)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;; Data
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (row a)
+  (row b)
+  (row c)
+  (row d)
+  (row e)
+  (row f)
+  (row g)
+  (row h)
+  (row i)
+  (row j)
+  (row k)
+  (row l)
+  (row m)
+
+  (col 1)
+  (col 2)
+  (col 3)
+  (col 4)
+  (col 5)
+  (col 6)
+  (col 7)
+  (col 8)
+  (col 9)
+  (col 10)
+  (col 11)
+  (col 12)
+  (col 13)
+
+  (nextrow a b)
+  (nextrow b c)
+  (nextrow c d)
+  (nextrow d e)
+  (nextrow e f)
+  (nextrow f g)
+  (nextrow g h)
+  (nextrow h i)
+  (nextrow i j)
+  (nextrow j k)
+  (nextrow k l)
+  (nextrow l m)
+
+  (nextcol 1 2)
+  (nextcol 2 3)
+  (nextcol 3 4)
+  (nextcol 4 5)
+  (nextcol 5 6)
+  (nextcol 6 7)
+  (nextcol 7 8)
+  (nextcol 8 9)
+  (nextcol 9 10)
+  (nextcol 10 11)
+  (nextcol 11 12)
+  (nextcol 12 13)
+
+  (swapaxis a 1)
+  (swapaxis b 2)
+  (swapaxis c 3)
+  (swapaxis d 4)
+  (swapaxis e 5)
+  (swapaxis f 6)
+  (swapaxis g 7)
+  (swapaxis h 8)
+  (swapaxis i 9)
+  (swapaxis j 10)
+  (swapaxis k 11)
+  (swapaxis l 12)
+  (swapaxis m 13)
+
+  (succ 1 2)
+  (succ 2 3)
+  (succ 3 4)
+  (succ 4 5)
+  (succ 5 6)
+  (succ 6 7)
+  (succ 7 8)
+  (succ 8 9)
+  (succ 9 10)
+  (succ 10 11)
+  (succ 11 12)
+  (succ 12 13)
+  (succ 13 14)
+  (succ 14 15)
+  (succ 15 16)
+  (succ 16 17)
+  (succ 17 18)
+  (succ 18 19)
+  (succ 19 20)
+  (succ 20 21)
+  (succ 21 22)
+  (succ 22 23)
+  (succ 23 24)
+  (succ 24 25)
+  (succ 25 26)
+  (succ 26 27)
+  (succ 27 28)
+  (succ 28 29)
+  (succ 29 30)
+  (succ 30 31)
+  (succ 31 32)
+  (succ 32 33)
+  (succ 33 34)
+  (succ 34 35)
+  (succ 35 36)
+  (succ 36 37)
+  (succ 37 38)
+  (succ 38 39)
+  (succ 39 40)
+  (succ 40 41)
+  (succ 41 42)
+  (succ 42 43)
+  (succ 43 44)
+  (succ 44 45)
+  (succ 45 46)
+  (succ 46 47)
+  (succ 47 48)
+  (succ 48 49)
+  (succ 49 50)
+  (succ 50 51)
+  (succ 51 52)
+  (succ 52 53)
+  (succ 53 54)
+  (succ 54 55)
+  (succ 55 56)
+  (succ 56 57)
+  (succ 57 58)
+  (succ 58 59)
+  (succ 59 60)
+  (succ 60 61)
+  (succ 61 62)
+  (succ 62 63)
+  (succ 63 64)
+  (succ 64 65)
+  (succ 65 66)
+  (succ 66 67)
+  (succ 67 68)
+  (succ 68 69)
+  (succ 69 70)
+  (succ 70 71)
+  (succ 71 72)
+  (succ 72 73)
+  (succ 73 74)
+  (succ 74 75)
+  (succ 75 76)
+  (succ 76 77)
+  (succ 77 78)
+  (succ 78 79)
+  (succ 79 80)
+  (succ 80 81)
+  (succ 81 82)
+  (succ 82 83)
+  (succ 83 84)
+  (succ 84 85)
+  (succ 85 86)
+  (succ 86 87)
+  (succ 87 88)
+  (succ 88 89)
+  (succ 89 90)
+  (succ 90 91)
+  (succ 91 92)
+  (succ 92 93)
+  (succ 93 94)
+  (succ 94 95)
+  (succ 95 96)
+  (succ 96 97)
+  (succ 97 98)
+  (succ 98 99)
+  (succ 99 100)
+  (succ 100 101)
+  (succ 101 102)
+  (succ 102 103)
+  (succ 103 104)
+  (succ 104 105)
+  (succ 105 106)
+  (succ 106 107)
+  (succ 107 108)
+  (succ 108 109)
+  (succ 109 110)
+  (succ 110 111)
+  (succ 111 112)
+  (succ 112 113)
+  (succ 113 114)
+  (succ 114 115)
+  (succ 115 116)
+  (succ 116 117)
+  (succ 117 118)
+  (succ 118 119)
+  (succ 119 120)
+
+  (succ 120 121)
+  (succ 121 122)
+  (succ 122 123)
+  (succ 123 124)
+  (succ 124 125)
+  (succ 125 126)
+  (succ 126 127)
+  (succ 127 128)
+  (succ 128 129)
+  (succ 129 130)
+
+  (succ 130 131)
+  (succ 131 132)
+  (succ 132 133)
+  (succ 133 134)
+  (succ 134 135)
+  (succ 135 136)
+  (succ 136 137)
+  (succ 137 138)
+  (succ 138 139)
+  (succ 139 140)
+
+  (succ 140 141)
+  (succ 141 142)
+  (succ 142 143)
+  (succ 143 144)
+  (succ 144 145)
+  (succ 145 146)
+  (succ 146 147)
+  (succ 147 148)
+  (succ 148 149)
+  (succ 149 150)
+
+  (succ 150 151)
+  (succ 151 152)
+  (succ 152 153)
+  (succ 153 154)
+  (succ 154 155)
+  (succ 155 156)
+  (succ 156 157)
+  (succ 157 158)
+  (succ 158 159)
+  (succ 159 160)
+  (succ 160 161)
+
+  (succ 161 162)
+  (succ 162 163)
+  (succ 163 164)
+  (succ 164 165)
+  (succ 165 166)
+  (succ 166 167)
+  (succ 167 168)
+  (succ 168 169)
+  (succ 169 170)
+  (succ 170 171)
+  (succ 171 172)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
