@@ -1,24 +1,23 @@
 Breakthrough
 ============
-v5_92 - was the first attempt at training breakthrough, over Xmas 2017 and early January 2018.  It
-did not use multiple policies, but will run with commit
-[5566375](https://github.com/ggplib/ggp-zero/commit/55663753ed479d449af80b1a7b93525bca5c9430).
 
+Models here:
+
+* kt1_206 - experimental best model
+* x6_164 - ICGA model
+* x6_111
+* x6_102
 
 The following models were ran on Little Golem:
+
 All games before and include game #1929586 - x6_102
-All games after #1929586 - x6_111
+To  #1929586 - x6_111
+All games after #1959831 - x6_164
 
 Trained at approx ggp-zero commit [5566375](https://github.com/ggplib/ggp-zero/commit/55663753ed479d449af80b1a7b93525bca5c9430).
 
 Special thanks to Richard Lorentz & Fabien Letouzey for entertaining mini competitions to evaluate the strength of
 models/bot on LG.
-
-----
-
-ICGA model: x6_164
-
-experimental best model: kt1_206
 
 
 elo graph
@@ -43,7 +42,7 @@ method, taking 100% of moves).  network was enlarged during run.  Suprising simi
 to double check.
 
 kt5 - configured with a very small network, and ran with maximum number evals so could continuously
-train, and just left to run unattened for for 3 days (with 3 gpus).
+train, and just left to run unattended for for 3 days (with 3 gpus).
 
 *Conclusion: quantity of data triumphs quality - as long train early & train often*
 
