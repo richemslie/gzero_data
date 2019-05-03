@@ -4,6 +4,8 @@ Hex 13
 Models here:
 
 * h1 - first attempt at training - ended @ 229 July, for first bot competition on LG
+* h2_320 - model used in most games in championship Dec '18
+
 * XXX still trying make sense of everything...
 
 
