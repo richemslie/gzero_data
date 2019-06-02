@@ -38,8 +38,6 @@ def main(genname_mapping, filename, gen_modifier=None, check_evals=800):
         return genmodel_to_data[name]
 
     for p in ratings.players:
-        #p.elo *= 2
-
         if "_" in p.name:
             if gen_modifier is not None:
                 gen = gen_modifier(p.name)
@@ -112,7 +110,7 @@ class Runner(object):
             kt3="mo",
             az1="go")
 
-        self._main(mapping, "bt8.elo", gen_modifier=gen_modifier)
+        self._main(mapping, "../data/elo/bt8.elo", gen_modifier=gen_modifier)
 
     def hex13(self, do_long=False):
         def gen_modifier(name):
@@ -145,9 +143,9 @@ class Runner(object):
             d2="co")
 
         if do_long:
-            self._main(mapping, "hex13_long.elo", gen_modifier=gen_modifier, check_evals=3200)
+            self._main(mapping, "../data/elo/hex13_long.elo", gen_modifier=gen_modifier, check_evals=3200)
         else:
-            self._main(mapping, "hex13.elo", gen_modifier=gen_modifier)
+            self._main(mapping, "../data/elo/hex13.elo", gen_modifier=gen_modifier)
 
 
     def c6(self):
@@ -155,14 +153,14 @@ class Runner(object):
             h1="ro",
             h2="bo")
 
-        self._main(mapping, "connect6.elo")
+        self._main(mapping, "../data/elo/connect6.elo")
 
     def az(self):
         mapping = dict(
             h1="ro",
             h3="go")
 
-        self._main(mapping, "amazons.elo")
+        self._main(mapping, "../data/elo/amazons.elo")
 
     def r8(self):
         mapping = dict(
@@ -172,7 +170,7 @@ class Runner(object):
             h5="go",
             h6="bo")
 
-        self._main(mapping, "r8.elo")
+        self._main(mapping, "../data/elo/r8.elo")
 
     def r10(self):
         mapping = dict(
@@ -182,14 +180,14 @@ class Runner(object):
             kt1="mo",
             h6="bo")
 
-        self._main(mapping, "r10.elo")
+        self._main(mapping, "../data/elo/r10.elo")
 
     def chess_15d(self):
         mapping = dict(
             c1="go",
             kb1="bo")
 
-        self._main(mapping, "chess_15d.elo")
+        self._main(mapping, "../data/elo/chess_15d.elo")
 
     def baduk9(self):
         mapping = dict(
@@ -205,7 +203,7 @@ class Runner(object):
                 name = name.strip("_bad")
             return int(name.split('_')[-1])
 
-        self._main(mapping, "baduk9_1.elo",
+        self._main(mapping, "../data/elo/baduk9_1.elo",
                    gen_modifier=gen_modifier)
 
     def _main(self, *args, **kargs):

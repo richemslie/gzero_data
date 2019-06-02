@@ -12,7 +12,7 @@ from ggpzero.util import attrutil as at
 from ggpzero.util import symmetry
 from ggpzero.nn import manager
 
-from gzero_games.battle.common import get_player, run, MatchTooLong
+from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
 NUM_GAMES = 20
@@ -411,8 +411,8 @@ def move_generator_baduk():
 class Runner(object):
     """Run games and calculate ELO."""
 
-    def connect6(self, filename="connect6.elo"):
-        from gzero_games.battle.connect6 import MatchInfo
+    def connect6(self, filename="../data/elo/connect6.elo"):
+        from ggpzero.battle.connect6 import MatchInfo
 
         match_info = MatchInfo()
 
@@ -455,8 +455,8 @@ class Runner(object):
         gen_elo(match_info, all_players, filename,
                 move_generator=move_generator_c6)
 
-    def hex13(self, filename="hex13.elo"):
-        from gzero_games.battle import hex
+    def hex13(self, filename="../data/elo/hex13.elo"):
+        from ggpzero.battle import hex
 
         match_info = hex.MatchInfo(13)
 
@@ -525,9 +525,9 @@ class Runner(object):
         gen_elo(match_info, all_players, filename,
                 move_generator=move_generator_hex13)
 
-    def baduk9_1(self, filename="baduk9_1.elo"):
-        from gzero_games.battle.baduk import helper
-        match_info = helper.MatchInfo(9)
+    def baduk9_1(self, filename="../data/elo/baduk9_1.elo"):
+        from ggpzero.battle import baduk
+        match_info = baduk.MatchInfo(9)
 
         def dp(g, playouts, v):
             return define_player("baduk9", g, playouts, v,
@@ -547,7 +547,7 @@ class Runner(object):
                 move_generator=move_generator_baduk)
 
     def test_move_gen(self):
-        from gzero_games.battle.connect6 import MatchInfo
+        from ggpzero.battle.connect6 import MatchInfo
 
         match_info = MatchInfo()
 
@@ -564,7 +564,7 @@ class Runner(object):
             raw_input()
 
     def test_move_gen2(self):
-        from gzero_games.battle import hex
+        from ggpzero.battle import hex
 
         match_info = hex.MatchInfo(13)
 
@@ -580,8 +580,8 @@ class Runner(object):
 
             raw_input()
 
-    def bt8(self, filename="bt8.elo"):
-        from gzero_games.battle.bt import MatchInfo
+    def bt8(self, filename="../data/elo/bt8.elo"):
+        from ggpzero.battle.bt import MatchInfo
         match_info = MatchInfo(8)
 
         def dp(g, playouts, v):
@@ -656,10 +656,10 @@ class Runner(object):
 
         gen_elo(match_info, all_players, filename)
 
-    def amazons(self, filename="amazons.elo"):
+    def amazons(self, filename="../data/elo/amazons.elo"):
         man = manager.get_manager()
 
-        from gzero_games.battle.amazons import MatchInfo
+        from ggpzero.battle.amazons import MatchInfo
         match_info = MatchInfo()
 
         def dp(g, playouts, v):
@@ -690,10 +690,10 @@ class Runner(object):
 
         gen_elo(match_info, all_players, filename)
 
-    def reversi_8(self, filename="r8.elo"):
+    def reversi_8(self, filename="../data/elo/r8.elo"):
         man = manager.get_manager()
 
-        from gzero_games.battle.reversi import MatchInfo8
+        from ggpzero.battle.reversi import MatchInfo8
         match_info = MatchInfo8()
 
         def dp(g, playouts, v):
@@ -728,10 +728,10 @@ class Runner(object):
 
         gen_elo(match_info, all_players, filename)
 
-    def reversi_10(self, filename="r10.elo"):
+    def reversi_10(self, filename="../data/elo/r10.elo"):
         man = manager.get_manager()
 
-        from gzero_games.battle.reversi import MatchInfo10
+        from ggpzero.battle.reversi import MatchInfo10
         match_info = MatchInfo10()
 
         random_player = get_player("r", MOVE_TIME)
@@ -784,7 +784,7 @@ class Runner(object):
 
         gen_elo(match_info, all_players, filename)
 
-    def chess_15d(self, filename="chess_15d.elo"):
+    def chess_15d(self, filename="../data/elo/chess_15d.elo"):
         def dp(g, playouts, v):
             return define_player("c_15f", g, playouts, v,
                                  dirichlet_noise_pct=0.15,
@@ -796,8 +796,8 @@ class Runner(object):
 
         man = manager.get_manager()
 
-        from gzero_games.battle.chess.helper import MatchInfo
-        match_info = MatchInfo(short_50=True)
+        from ggpzero.battle import chess
+        match_info = chess.MatchInfo(short_50=True)
 
         random_player = get_player("r", MOVE_TIME)
         mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
