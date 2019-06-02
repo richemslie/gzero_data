@@ -1,0 +1,173 @@
+{
+    "obj": {
+        "game": "amazons_10x10",
+        "log": [
+        ],
+        "players": [
+            {
+                "elo": 2121.9131664546544,
+                "fixed": false,
+                "name": "az_v3_800_h3_177",
+                "played": 101
+            },
+            {
+                "elo": 2108.8366522235992,
+                "fixed": false,
+                "name": "az_v3_800_h3_157",
+                "played": 107
+            },
+            {
+                "elo": 2016.6093827835323,
+                "fixed": false,
+                "name": "az_v3_800_h3_167",
+                "played": 112
+            },
+            {
+                "elo": 2008.8713721839079,
+                "fixed": false,
+                "name": "az_v3_800_h3_147",
+                "played": 107
+            },
+            {
+                "elo": 1944.7306170722798,
+                "fixed": false,
+                "name": "az_v3_800_h3_107",
+                "played": 100
+            },
+            {
+                "elo": 1873.0963036989347,
+                "fixed": false,
+                "name": "az_v3_800_h3_137",
+                "played": 110
+            },
+            {
+                "elo": 1860.8941861905103,
+                "fixed": false,
+                "name": "az_v3_800_h3_97",
+                "played": 102
+            },
+            {
+                "elo": 1763.7911963785284,
+                "fixed": false,
+                "name": "az_v3_800_h3_127",
+                "played": 108
+            },
+            {
+                "elo": 1744.7171390938097,
+                "fixed": false,
+                "name": "az_v3_800_h3_117",
+                "played": 108
+            },
+            {
+                "elo": 1683.2490199539882,
+                "fixed": false,
+                "name": "az_v3_800_h3_87",
+                "played": 109
+            },
+            {
+                "elo": 1621.8313976329628,
+                "fixed": false,
+                "name": "az_v3_800_h3_67",
+                "played": 100
+            },
+            {
+                "elo": 1577.1355626894886,
+                "fixed": false,
+                "name": "az_v3_800_h3_77",
+                "played": 102
+            },
+            {
+                "elo": 1533.3073790661597,
+                "fixed": false,
+                "name": "az_v3_800_h3_47",
+                "played": 107
+            },
+            {
+                "elo": 1513.0359002237558,
+                "fixed": false,
+                "name": "az_v3_800_h3_37",
+                "played": 103
+            },
+            {
+                "elo": 1442.5488060558034,
+                "fixed": false,
+                "name": "az_v3_800_h3_57",
+                "played": 113
+            },
+            {
+                "elo": 1357.6372693430742,
+                "fixed": false,
+                "name": "az_v3_800_h3_27",
+                "played": 103
+            },
+            {
+                "elo": 1264.263820166968,
+                "fixed": false,
+                "name": "az_v3_800_h1_27",
+                "played": 104
+            },
+            {
+                "elo": 1217.7836158448797,
+                "fixed": false,
+                "name": "az_v3_800_h3_17",
+                "played": 101
+            },
+            {
+                "elo": 1208.4543653854255,
+                "fixed": false,
+                "name": "simplemcts",
+                "played": 104
+            },
+            {
+                "elo": 1107.327351964795,
+                "fixed": false,
+                "name": "az_v3_800_h1_22",
+                "played": 105
+            },
+            {
+                "elo": 1088.3328135671388,
+                "fixed": false,
+                "name": "pymcs",
+                "played": 101
+            },
+            {
+                "elo": 1020.7603339078659,
+                "fixed": false,
+                "name": "az_v3_800_h3_7",
+                "played": 100
+            },
+            {
+                "elo": 925.3334623906316,
+                "fixed": false,
+                "name": "az_v3_800_h1_17",
+                "played": 105
+            },
+            {
+                "elo": 810.024705255034,
+                "fixed": false,
+                "name": "az_v3_800_h1_12",
+                "played": 104
+            },
+            {
+                "elo": 638.612582051751,
+                "fixed": false,
+                "name": "az_v3_800_h1_7",
+                "played": 104
+            },
+            {
+                "elo": 495.5050326912298,
+                "fixed": true,
+                "name": "random",
+                "played": 100
+            }
+        ],
+        "players__clzlist__": [
+            "__main__",
+            "PlayerRating"
+        ]
+    },
+    "obj__clz__": [
+        "__main__",
+        "AllRatings"
+    ]
+}
