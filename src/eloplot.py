@@ -115,10 +115,10 @@ class Runner(object):
         def gen_modifier(name):
             gen = int(name.split('_')[-1])
             if not do_long and "c2_" in name:
-                gen += 200
+                gen += 275
 
-            #elif "d2_" in name:
-            #    gen += 360
+            elif "d2_" in name:
+                gen += 450
             else:
                 for prefix in ("h4", "h5", "h6"):
                     if prefix in name:

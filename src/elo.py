@@ -791,9 +791,12 @@ class Runner(object):
                                  depth_temperature_stop=6,
                                  depth_temperature_start=6,
                                  max_dump_depth=1,
+                                 evaluation_multipler_to_convergence=2.0,
                                  batch_size=8,
-                                 fpu_prior_discount_root=0.05,
-                                 fpu_prior_discount=0.1,
+                                 noise_policy_squash_pct=0.5,
+                                 noise_policy_squash_prob=0.25,
+                                 fpu_prior_discount_root=0.1,
+                                 fpu_prior_discount=0.2,
                                  random_scale=0.8)
 
         man = manager.get_manager()
