@@ -4,9 +4,12 @@ Hex 13
 Models here:
 
 * h1 - first attempt at training - ended @ 229 July, for first bot competition on LG
-* h2_320 - model used in most games in championship Dec '18
+* h2_320 - model used in most games in LG Championship Dec '18
 
-* XXX still trying make sense of everything...
+* c2 - was forked and started over from c1.  Artificially moved to right 275.
+* d2 - was forked and started over from c1/c2.  Artificially moved to right 450.
+
+* d2_194 (d2_644 on graph) was model used in LG Championship May '19.
 
 
 elo graph
