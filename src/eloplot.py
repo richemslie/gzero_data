@@ -82,7 +82,6 @@ def main(genname_mapping, filename, gen_modifier=None, check_evals=800):
     plt.xlabel("Generation")
     mng = plt.get_current_fig_manager()
     plt.legend(loc='lower right')
-    print dir(mng)
     plt.show()
 
 

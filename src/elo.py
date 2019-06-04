@@ -15,7 +15,7 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 20
+NUM_GAMES = 10
 MOVE_TIME = 30.0
 RESIGN_PCT = 0.1
 STARTING_ELO = 1500.0
@@ -791,8 +791,10 @@ class Runner(object):
                                  depth_temperature_stop=6,
                                  depth_temperature_start=6,
                                  max_dump_depth=1,
-                                 batch_size=4,
-                                 random_scale=0.9)
+                                 batch_size=8,
+                                 fpu_prior_discount_root=0.05,
+                                 fpu_prior_discount=0.1,
+                                 random_scale=0.8)
 
         man = manager.get_manager()
 
@@ -818,6 +820,20 @@ class Runner(object):
 
         all_players += [dp(g, 800, 3) for g in gens]
         gen_elo(match_info, all_players, filename)
+
+
+    # def chess_fix(self, filename="../data/elo/chess_15d.elo"):
+    #     if os.path.exists(filename):
+    #         ratings = at.json_to_attr(open(filename).read())
+    #     else:
+    #         ratings = AllRatings(match_info.name)
+    #         ratings.players.append(PlayerRating("random", fixed=True, elo=500.0))
+
+
+    #     for p in ratings.players:
+    #         p.elo -= 750
+
+    #     elo_dump_and_save(filename, ratings)
 
 
 ###############################################################################
