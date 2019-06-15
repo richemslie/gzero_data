@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/06/04 08:22",
+        "draw_head": false,
+        "game": "chess_15d",
+        "multiple_policy_heads": true,
+        "name": "kb1_283",
+        "num_previous_states": 1,
+        "trained_losses": "value_loss = 0.1240, policy_1_loss = 1.0361, loss = 2.2643, policy_0_loss = 1.0417",
+        "trained_policy_accuracy": "combined policy accuracy 0.4849/0.5103",
+        "trained_validation_losses": "val_value_loss = 0.1244, val_policy_1_loss = 0.9703, val_policy_0_loss = 0.9849, val_loss = 2.1420",
+        "trained_value_accuracy": "score accuracy 0.7243 / 0.7244",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
