@@ -184,9 +184,17 @@ class Runner(object):
     def chess_15d(self):
         mapping = dict(
             c1="go",
+            c2="mo",
             kb1="bo")
 
-        self._main(mapping, "../data/elo/chess_15d.elo")
+        def gen_modifier(name):
+            gen = int(name.split('_')[-1])
+            if "c2" in name:
+                gen += 200
+            return gen
+
+        self._main(mapping, "../data/elo/chess_15d.elo",
+                   gen_modifier=gen_modifier)
 
     def baduk9(self):
         mapping = dict(

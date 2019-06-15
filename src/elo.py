@@ -15,7 +15,7 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 10
+NUM_GAMES = 5
 MOVE_TIME = 30.0
 RESIGN_PCT = 0.1
 STARTING_ELO = 1500.0
@@ -152,8 +152,11 @@ def elo_dump_and_save(filename, ratings):
         f.write(contents)
 
 
-def choose_players(all_players):
+def choose_players(all_players, verbose=False):
     ''' will return None if no candidates '''
+
+    all_players = [p for p in all_players if hasattr(p, "rating")]
+
     for count in CHOOSE_BUCKETS:
         candidates = [c for c in all_players if c.rating.played < count]
         if candidates:
@@ -190,15 +193,18 @@ def choose_players(all_players):
     total = sum(K**x for x, _ in dist)
     over_this = random.random() * total
 
-    print [K**x for x, _ in dist]
-    print "first_player", first_player, over_this, total
+    if verbose:
+        print [K**x for x, _ in dist]
+        print "first_player", first_player, over_this, total
 
     second_player = None
     acc = 0
 
     for prob, p in dist:
         acc += K ** prob
-        print "NEXT", prob, acc, p
+        if verbose:
+            print "NEXT", prob, acc, p
+
         if acc > over_this:
             second_player = p
             break
@@ -206,7 +212,8 @@ def choose_players(all_players):
     if second_player is None:
         second_player = dist[-1][1]
 
-    print "second_player", second_player
+    if verbose:
+        print "second_player", second_player
 
     # who plays first?
     if random.random() > 0.5:
@@ -223,6 +230,9 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
         ratings.players.append(PlayerRating("random", fixed=True, elo=500.0))
 
     # add in all the players
+
+    # slow add one playeer
+    slow_add_count = 0
     for p in all_players:
         print "Adding", p.get_name()
 
@@ -232,10 +242,16 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
                 playerinfo = info
 
         if playerinfo is None:
-            playerinfo = PlayerRating(p.get_name(), 0, STARTING_ELO)
-            ratings.players.append(playerinfo)
+            if slow_add_count >= 2:
+                print "SKIPPING for now", playerinfo
+                continue
+            else:
+                playerinfo = PlayerRating(p.get_name(), 0, STARTING_ELO)
+                ratings.players.append(playerinfo)
 
         p.rating = playerinfo
+        if playerinfo.played < 20:
+            slow_add_count += 1
 
     # check no leftover ratings for players
     for rated_player in ratings.players:
@@ -811,7 +827,8 @@ class Runner(object):
 
         gens = []
         for name, num, incr in (["c1", 5, 7],
-                                ["kb1", 3, 5]):
+                                ["kb1", 3, 5],
+                                ["c2", 145, 5]):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("chess_15d", gen):

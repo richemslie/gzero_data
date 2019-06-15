@@ -1,7 +1,9 @@
 Chess
 =====
 
-TODO
+* kb1 was trained with self play and historical data (concurrently 1-1 ratio).
+* cb1/cb2 was trained via self play only.
+
 
 elo graph
 ---------
