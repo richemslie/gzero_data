@@ -2,8 +2,8 @@ Chess
 =====
 
 * kb1 was trained with self play and historical data (concurrently 1-1 ratio).
-* cb1/cb2 was trained via self play only.
-
+* c1/c2 was trained via self play only.
+* c2 forked from c1, slightly larger network.  Switched to using 3 value heads (black/white/draw) with cross entropy.
 
 elo graph
 ---------
