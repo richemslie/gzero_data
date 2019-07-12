@@ -2,7 +2,6 @@ import os
 import math
 import random
 import operator
-
 from functools import partial
 
 # 3rd party: https://github.com/google/python-fire
@@ -15,10 +14,11 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 10
+NUM_GAMES = 20
 MOVE_TIME = 30.0
-RESIGN_PCT = 0.1
+RESIGN_PCT = 0.05
 STARTING_ELO = 1500.0
+MAX_ADD_COUNT = 200
 
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
 
@@ -66,6 +66,7 @@ class AllRatings(object):
 
 
 def define_player(game, gen, playouts, version, **extra_opts):
+    print "XXX", game, gen, playouts, version, extra_opts
     opts = dict(verbose=True,
                 puct_constant=0.85,
 
@@ -85,6 +86,9 @@ def define_player(game, gen, playouts, version, **extra_opts):
 
                 max_dump_depth=2,
                 top_visits_best_guess_converge_ratio=0.85,
+
+                backup_finalised=True,
+                lookup_transpositions=True,
 
                 # Passed in
                 playouts_per_iteration=playouts)
@@ -111,7 +115,7 @@ def define_player(game, gen, playouts, version, **extra_opts):
                     think_time=MOVE_TIME,
                     converged_visits=playouts / 2)
         opts.update(extra_opts)
-        return get_player("p2", MOVE_TIME, gen, **opts)
+        return get_player("puct", MOVE_TIME, gen, **opts)
 
     elif version == 2:
         opts.update(name="%s_v2" % game,
@@ -126,13 +130,11 @@ def define_player(game, gen, playouts, version, **extra_opts):
                     converge_relaxed=playouts / 2)
 
         opts.update(extra_opts)
-        return get_player("p2", MOVE_TIME, gen, **opts)
+        return get_player("puct", MOVE_TIME, gen, **opts)
 
     elif version == 1:
-        opts.update(name="%s_v1" % game,
-                    evaluation_multipler_to_convergence=2.0)
-        opts.update(extra_opts)
-        return get_player("p1", MOVE_TIME, gen, **opts)
+        assert False, "Deprecated with puct1 removal"
+
     else:
         assert False, "invalid version: %s" % version
 
@@ -242,7 +244,7 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
                 playerinfo = info
 
         if playerinfo is None:
-            if slow_add_count >= 2:
+            if slow_add_count >= MAX_ADD_COUNT:
                 print "SKIPPING for now", playerinfo
                 continue
             else:
@@ -288,7 +290,7 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
 
             (_, score0), (_, score1) = res[1]
             res_str = ""
-            k = 42 * 3.0
+            k = 42 * 2.5
             if score0 == 100:
                 res_str = "1st player wins"
                 player0_wins = True
@@ -323,16 +325,16 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
             if r.fixed:
                 return 0.0
 
-            if r.played < 10:
-                return k * 2
+            if r.played < 20:
+                return k * 2.5
 
-            if r.played < 25:
+            if r.played < 40:
                 return k
 
-            if r.played < 50:
+            if r.played < 60:
                 return k / 2.0
 
-            if r.played > 50:
+            if r.played > 60:
                 kx = k / 2.5
 
             else:
@@ -604,7 +606,7 @@ class Runner(object):
             return define_player("bt8", g, playouts, v,
                                  depth_temperature_stop=4,
                                  depth_temperature_start=4,
-                                 random_scale=0.9)
+                                 random_scale=0.5)
 
         # 3 models ran on LG
         all_players = [dp(g, 800, 3) for g in ("x6_90",
@@ -633,37 +635,23 @@ class Runner(object):
 
         man = manager.get_manager()
 
-        # add 10, 14, 18, ...
-        num = 10
-        while True:
-            gen = "kt1_%s" % num
-            if not man.can_load("breakthrough", gen):
-                break
+        gens = []
 
-            kt_gens.append(gen)
-            num += 4
-
-        for name in ("kt3", "az1"):
-            num = 2
+        for name, num, incr in (["kt1", 10, 4],
+                                ["kt3", 2, 3],
+                                ["kt5", 2, 10],
+                                ["f1", 1, 5],
+                                ["az1", 2, 3]):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("breakthrough", gen):
+                    print "FAILED TO LOAD GEN", gen
                     break
 
-                kt_gens.append(gen)
-                num += 3
+                gens.append(gen)
+                num += incr
 
-        for name in ("kt5",):
-            num = 2
-            while True:
-                gen = "%s_%s" % (name, num)
-                if not man.can_load("breakthrough", gen):
-                    break
-
-                kt_gens.append(gen)
-                num += 10
-
-        all_players += [dp(g, 800, 3) for g in kt_gens]
+        all_players += [dp(g, 800, 3) for g in gens]
 
         random_player = get_player("r", MOVE_TIME)
         mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
@@ -717,7 +705,7 @@ class Runner(object):
                                  dirichlet_noise_pct=0.15,
                                  depth_temperature_stop=6,
                                  depth_temperature_start=6,
-                                 random_scale=0.9,
+                                 random_scale=0.75,
                                  max_dump_depth=1)
 
         random_player = get_player("r", MOVE_TIME)
@@ -730,7 +718,9 @@ class Runner(object):
                                 ["h5", 10, 20],
                                 ['h6', 15, 20],
                                 ["kt1", 3, 5],
-                                ["kt2", 2, 5]):
+                                ["kt2", 2, 5],
+                                ["f1", 2, 6],
+                                ["f2", 2, 6]):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("reversi", gen):
@@ -807,13 +797,39 @@ class Runner(object):
                                  depth_temperature_stop=6,
                                  depth_temperature_start=6,
                                  max_dump_depth=1,
-                                 evaluation_multipler_to_convergence=2.0,
+                                 evaluation_multiplier_to_convergence=2.0,
                                  batch_size=8,
                                  noise_policy_squash_pct=0.5,
                                  noise_policy_squash_prob=0.25,
                                  fpu_prior_discount_root=0.1,
                                  fpu_prior_discount=0.2,
                                  random_scale=0.8)
+
+        def dp_policy(g, v):
+            return define_player("policy", g, 1, v,
+                                 temperature=2.0,
+                                 dirichlet_noise_pct=-1,
+                                 depth_temperature_stop=6,
+                                 depth_temperature_start=6,
+                                 max_dump_depth=1,
+                                 batch_size=1,
+                                 noise_policy_squash_pct=-1,
+                                 noise_policy_squash_prob=-1,
+                                 random_scale=0.8)
+
+        def dp_minimal(g, v):
+            return define_player("minimal", g, 8, v,
+                                 temperature=2.0,
+                                 dirichlet_noise_pct=-1,
+                                 depth_temperature_stop=6,
+                                 depth_temperature_start=6,
+                                 max_dump_depth=1,
+                                 batch_size=1,
+                                 fpu_prior_discount_root=0.05,
+                                 fpu_prior_discount=0.05,
+                                 noise_policy_squash_pct=-1,
+                                 noise_policy_squash_prob=-1,
+                                 random_scale=0.5)
 
         man = manager.get_manager()
 
@@ -828,7 +844,8 @@ class Runner(object):
         gens = []
         for name, num, incr in (["c1", 5, 7],
                                 ["kb1", 3, 5],
-                                ["c2", 145, 5]):
+                                ["c2", 145, 5],
+                                ["d1", 3, 5]):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("chess_15d", gen):
@@ -838,7 +855,10 @@ class Runner(object):
                 gens.append(gen)
                 num += incr
 
+        gens.append("c2_367")
         all_players += [dp(g, 800, 3) for g in gens]
+        all_players += [dp_policy(g, 3) for g in ["c2_375"]]
+        all_players += [dp_minimal(g, 3) for g in ["c2_375"]]
         gen_elo(match_info, all_players, filename)
 
 

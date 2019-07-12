@@ -1,4 +1,6 @@
 import sys
+import random
+from collections import OrderedDict
 
 import matplotlib.pyplot as plt
 
@@ -104,6 +106,7 @@ class Runner(object):
 
         mapping = dict(
             x6="ro",
+            f1="yo",
             kt1="bo",
             kt5="co",
             kt3="mo",
@@ -142,9 +145,11 @@ class Runner(object):
             d2="co")
 
         if do_long:
-            self._main(mapping, "../data/elo/hex13_long.elo", gen_modifier=gen_modifier, check_evals=3200)
+            self._main(mapping, "../data/elo/hex13_long.elo", gen_modifier=gen_modifier,
+                       check_evals=3200)
         else:
-            self._main(mapping, "../data/elo/hex13.elo", gen_modifier=gen_modifier)
+            #, gen_modifier=gen_modifier
+            self._main(mapping, "../data/elo/hex13.elo")
 
 
     def c6(self):
@@ -165,6 +170,8 @@ class Runner(object):
         mapping = dict(
             kt1="co",
             kt2="mo",
+            f1="yo",
+            f2="b^",
             h3="ro",
             h5="go",
             h6="bo")
@@ -182,10 +189,16 @@ class Runner(object):
         self._main(mapping, "../data/elo/r10.elo")
 
     def chess_15d(self):
-        mapping = dict(
+        mapping = OrderedDict(
+            policy="mx",
+            minimal="rx")
+        mapping.update(
             c1="go",
             c2="mo",
+            d1="co",
             kb1="bo")
+
+        print mapping
 
         def gen_modifier(name):
             gen = int(name.split('_')[-1])
