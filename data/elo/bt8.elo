@@ -5,1192 +5,1336 @@
         ],
         "players": [
             {
-                "elo": 2923.46470466849,
+                "elo": 3207.662613048998,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_261",
-                "played": 84
-            },
-            {
-                "elo": 2904.0583370088925,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_241",
-                "played": 102
-            },
-            {
-                "elo": 2841.5345010456854,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_266",
-                "played": 85
-            },
-            {
-                "elo": 2830.8115565901053,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_276",
-                "played": 19
-            },
-            {
-                "elo": 2827.258172052424,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_206",
-                "played": 193
-            },
-            {
-                "elo": 2822.4437700992107,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_271",
-                "played": 70
-            },
-            {
-                "elo": 2818.381347469485,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_198",
-                "played": 231
-            },
-            {
-                "elo": 2798.2521056783007,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_218",
-                "played": 166
-            },
-            {
-                "elo": 2793.8675106302408,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_256",
-                "played": 98
-            },
-            {
-                "elo": 2750.2759130340064,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_246",
-                "played": 94
-            },
-            {
-                "elo": 2748.671695763698,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_210",
-                "played": 203
-            },
-            {
-                "elo": 2747.1088402539262,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_230",
-                "played": 166
-            },
-            {
-                "elo": 2744.604556620108,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_194",
-                "played": 246
-            },
-            {
-                "elo": 2738.686348735737,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_202",
-                "played": 209
-            },
-            {
-                "elo": 2694.3720859353675,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_236",
-                "played": 101
-            },
-            {
-                "elo": 2679.1137218509134,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_222",
-                "played": 156
-            },
-            {
-                "elo": 2658.2362893137624,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_206",
-                "played": 107
-            },
-            {
-                "elo": 2645.7569190529157,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_251",
-                "played": 93
-            },
-            {
-                "elo": 2639.5781459959494,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_231",
-                "played": 98
-            },
-            {
-                "elo": 2628.8363175386025,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_226",
-                "played": 165
-            },
-            {
-                "elo": 2610.3140075281185,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_214",
-                "played": 181
-            },
-            {
-                "elo": 2608.0646805554175,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_201",
+                "name": "bt8_v3_800_f1_366",
                 "played": 105
             },
             {
-                "elo": 2586.7032772807966,
+                "elo": 3178.852580130263,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_216",
-                "played": 101
+                "name": "bt8_v3_800_f1_396",
+                "played": 100
             },
             {
-                "elo": 2576.577087257565,
+                "elo": 3149.326194036886,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_226",
-                "played": 98
+                "name": "bt8_v3_800_f1_386",
+                "played": 105
             },
             {
-                "elo": 2561.6634631371,
+                "elo": 3142.2207727906884,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_211",
-                "played": 103
+                "name": "bt8_v3_800_f1_381",
+                "played": 111
             },
             {
-                "elo": 2559.7728699767144,
+                "elo": 3128.2722234323496,
                 "fixed": false,
-                "name": "bt8_v3_800_kt1_174",
-                "played": 315
-            },
-            {
-                "elo": 2542.921143005912,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_176",
+                "name": "bt8_v3_800_f1_391",
                 "played": 115
             },
             {
-                "elo": 2540.213288187758,
+                "elo": 3086.3013183092344,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_186",
-                "played": 102
+                "name": "bt8_v3_800_f1_371",
+                "played": 117
             },
             {
-                "elo": 2536.3644267659442,
+                "elo": 3034.033091475105,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_171",
-                "played": 129
-            },
-            {
-                "elo": 2534.4558044308565,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_191",
-                "played": 108
-            },
-            {
-                "elo": 2522.886118005583,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_190",
-                "played": 263
-            },
-            {
-                "elo": 2515.9264304420312,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_156",
-                "played": 137
-            },
-            {
-                "elo": 2511.0689626499,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_177",
-                "played": 418
-            },
-            {
-                "elo": 2501.943468238422,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_221",
-                "played": 91
-            },
-            {
-                "elo": 2473.4594278222285,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_196",
-                "played": 109
-            },
-            {
-                "elo": 2466.091957470015,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_186",
-                "played": 255
-            },
-            {
-                "elo": 2459.572892201261,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_166",
-                "played": 147
-            },
-            {
-                "elo": 2457.118426225556,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_166",
-                "played": 251
-            },
-            {
-                "elo": 2443.2994333033093,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_161",
-                "played": 156
-            },
-            {
-                "elo": 2414.1050089441037,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_181",
-                "played": 101
-            },
-            {
-                "elo": 2406.849101025493,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_170",
-                "played": 251
-            },
-            {
-                "elo": 2394.2239815205103,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_151",
-                "played": 148
-            },
-            {
-                "elo": 2366.156044002258,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_134",
-                "played": 297
-            },
-            {
-                "elo": 2355.226829506937,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_171",
-                "played": 230
-            },
-            {
-                "elo": 2348.0084996248893,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_158",
-                "played": 244
-            },
-            {
-                "elo": 2346.7763364392868,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_182",
-                "played": 284
-            },
-            {
-                "elo": 2345.8742737664643,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_141",
-                "played": 141
-            },
-            {
-                "elo": 2343.4866014760078,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_121",
-                "played": 128
-            },
-            {
-                "elo": 2341.4846045189615,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_162",
-                "played": 215
-            },
-            {
-                "elo": 2336.312222248348,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_158",
-                "played": 428
-            },
-            {
-                "elo": 2335.3003447678307,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_146",
-                "played": 118
-            },
-            {
-                "elo": 2333.4843998602296,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_136",
-                "played": 112
-            },
-            {
-                "elo": 2329.5765271038663,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_138",
-                "played": 263
-            },
-            {
-                "elo": 2322.314281631674,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_126",
-                "played": 124
-            },
-            {
-                "elo": 2320.710149784553,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_118",
-                "played": 362
-            },
-            {
-                "elo": 2316.4999541265192,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_163",
-                "played": 457
-            },
-            {
-                "elo": 2313.2271546392085,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_151",
-                "played": 275
-            },
-            {
-                "elo": 2312.3838460161046,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_111",
-                "played": 118
-            },
-            {
-                "elo": 2307.072783489057,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_130",
-                "played": 272
-            },
-            {
-                "elo": 2305.3168118905287,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_126",
-                "played": 292
-            },
-            {
-                "elo": 2294.3087896023444,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_106",
+                "name": "bt8_v3_800_f1_376",
                 "played": 114
             },
             {
-                "elo": 2292.213840718627,
+                "elo": 3030.9308587258847,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_131",
-                "played": 120
-            },
-            {
-                "elo": 2288.259595725412,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_102",
-                "played": 342
-            },
-            {
-                "elo": 2284.1599821288855,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_142",
-                "played": 274
-            },
-            {
-                "elo": 2278.0827053383764,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_116",
-                "played": 115
-            },
-            {
-                "elo": 2270.47486219015,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_114",
-                "played": 324
-            },
-            {
-                "elo": 2261.5185472249705,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_96",
-                "played": 116
-            },
-            {
-                "elo": 2259.290400014739,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_145",
-                "played": 492
-            },
-            {
-                "elo": 2257.950209069674,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_178",
-                "played": 246
-            },
-            {
-                "elo": 2235.030821812599,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_106",
-                "played": 406
-            },
-            {
-                "elo": 2234.9289079444343,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_122",
-                "played": 286
-            },
-            {
-                "elo": 2230.880079033061,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_101",
-                "played": 111
-            },
-            {
-                "elo": 2226.799578109723,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_146",
-                "played": 139
-            },
-            {
-                "elo": 2224.5620707306603,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_149",
-                "played": 124
-            },
-            {
-                "elo": 2201.135484626458,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_131",
-                "played": 147
-            },
-            {
-                "elo": 2197.380420633806,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_110",
-                "played": 169
-            },
-            {
-                "elo": 2192.2811769304385,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_152",
-                "played": 153
-            },
-            {
-                "elo": 2181.670233433546,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_139",
-                "played": 282
-            },
-            {
-                "elo": 2180.4247490353846,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_140",
-                "played": 141
-            },
-            {
-                "elo": 2173.730867239708,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_154",
-                "played": 215
-            },
-            {
-                "elo": 2168.184025675108,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_98",
-                "played": 319
-            },
-            {
-                "elo": 2163.4053937268563,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_82",
-                "played": 386
-            },
-            {
-                "elo": 2159.8590373505535,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_155",
-                "played": 123
-            },
-            {
-                "elo": 2141.2232261217337,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_110",
-                "played": 311
-            },
-            {
-                "elo": 2138.4275733767695,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_134",
-                "played": 144
-            },
-            {
-                "elo": 2137.9730356619693,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_119",
-                "played": 170
-            },
-            {
-                "elo": 2133.341269016456,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_104",
-                "played": 171
-            },
-            {
-                "elo": 2125.256159235273,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_111",
-                "played": 441
-            },
-            {
-                "elo": 2123.2750779294547,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_143",
-                "played": 149
-            },
-            {
-                "elo": 2122.036646147996,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_137",
-                "played": 137
-            },
-            {
-                "elo": 2118.136229132138,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_78",
-                "played": 355
-            },
-            {
-                "elo": 2108.1556581549476,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_90",
-                "played": 387
-            },
-            {
-                "elo": 2107.9329079937525,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_94",
-                "played": 350
-            },
-            {
-                "elo": 2099.902173578321,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_74",
-                "played": 419
-            },
-            {
-                "elo": 2099.150958736513,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_113",
-                "played": 169
-            },
-            {
-                "elo": 2091.001400569419,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_132",
-                "played": 533
-            },
-            {
-                "elo": 2083.6673448417096,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_86",
-                "played": 381
-            },
-            {
-                "elo": 2083.590629085173,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_128",
-                "played": 146
-            },
-            {
-                "elo": 2073.759325785013,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_86",
-                "played": 106
-            },
-            {
-                "elo": 2063.4070841041835,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_122",
-                "played": 157
-            },
-            {
-                "elo": 2059.824251777624,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_125",
-                "played": 159
-            },
-            {
-                "elo": 2058.445152810523,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_106",
-                "played": 234
-            },
-            {
-                "elo": 2049.355693254682,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_116",
-                "played": 248
-            },
-            {
-                "elo": 2044.9347987097797,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_107",
-                "played": 200
-            },
-            {
-                "elo": 2044.5076909124587,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_123",
-                "played": 202
-            },
-            {
-                "elo": 2032.549034245698,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_116",
-                "played": 174
-            },
-            {
-                "elo": 2026.6817657576603,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_150",
-                "played": 286
-            },
-            {
-                "elo": 2021.7119066647354,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_96",
-                "played": 226
-            },
-            {
-                "elo": 2019.1216488973355,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_127",
-                "played": 262
-            },
-            {
-                "elo": 2008.9764813241563,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_76",
-                "played": 108
-            },
-            {
-                "elo": 2004.545462375054,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_102",
-                "played": 443
-            },
-            {
-                "elo": 1962.6516045318426,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_81",
-                "played": 108
-            },
-            {
-                "elo": 1962.5694963264723,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_212",
-                "played": 126
-            },
-            {
-                "elo": 1960.5410115531263,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_71",
-                "played": 113
-            },
-            {
-                "elo": 1945.4083019229188,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_202",
-                "played": 135
-            },
-            {
-                "elo": 1939.142737798736,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_91",
-                "played": 106
-            },
-            {
-                "elo": 1916.63073439025,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_51",
-                "played": 113
-            },
-            {
-                "elo": 1903.900256141875,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_46",
-                "played": 109
-            },
-            {
-                "elo": 1888.2151034047429,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_56",
-                "played": 112
-            },
-            {
-                "elo": 1883.6525490199765,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_41",
-                "played": 108
-            },
-            {
-                "elo": 1870.3057610213912,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_172",
-                "played": 132
-            },
-            {
-                "elo": 1869.3237979053195,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_70",
-                "played": 344
-            },
-            {
-                "elo": 1865.6648344706373,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_162",
-                "played": 147
-            },
-            {
-                "elo": 1858.82720680788,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_182",
-                "played": 128
-            },
-            {
-                "elo": 1856.9079429124245,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_66",
-                "played": 389
-            },
-            {
-                "elo": 1831.413459576719,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_66",
-                "played": 108
-            },
-            {
-                "elo": 1819.6134762594513,
-                "fixed": false,
-                "name": "bt8_v3_800_x6_90",
-                "played": 427
-            },
-            {
-                "elo": 1813.379684784545,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_98",
-                "played": 181
-            },
-            {
-                "elo": 1806.3349238647324,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_192",
-                "played": 121
-            },
-            {
-                "elo": 1783.316236052302,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_62",
-                "played": 418
-            },
-            {
-                "elo": 1782.6633128173064,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_42",
-                "played": 427
-            },
-            {
-                "elo": 1780.0765227783716,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_92",
-                "played": 163
-            },
-            {
-                "elo": 1779.3065611899258,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_152",
-                "played": 123
-            },
-            {
-                "elo": 1779.2327084548713,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_102",
-                "played": 111
-            },
-            {
-                "elo": 1778.538690456411,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_146",
-                "played": 308
-            },
-            {
-                "elo": 1778.5039586574717,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_86",
-                "played": 167
-            },
-            {
-                "elo": 1765.8053707827564,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_112",
-                "played": 118
-            },
-            {
-                "elo": 1764.6501307626925,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_61",
-                "played": 105
-            },
-            {
-                "elo": 1763.8390669270036,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_50",
-                "played": 399
-            },
-            {
-                "elo": 1756.5146627590202,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_95",
-                "played": 166
-            },
-            {
-                "elo": 1736.3265305885088,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_132",
-                "played": 129
-            },
-            {
-                "elo": 1733.5106519051355,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_54",
-                "played": 403
-            },
-            {
-                "elo": 1731.2226036281513,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_83",
-                "played": 178
-            },
-            {
-                "elo": 1715.1254626843158,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_92",
-                "played": 119
-            },
-            {
-                "elo": 1714.9428193137974,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_58",
-                "played": 388
-            },
-            {
-                "elo": 1707.8102186478657,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_36",
-                "played": 106
-            },
-            {
-                "elo": 1703.6421252663656,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_62",
-                "played": 124
-            },
-            {
-                "elo": 1693.674665283412,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_122",
-                "played": 118
-            },
-            {
-                "elo": 1692.7600347401071,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_89",
-                "played": 173
-            },
-            {
-                "elo": 1684.911088389426,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_101",
-                "played": 162
-            },
-            {
-                "elo": 1680.1608563561756,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_71",
-                "played": 188
-            },
-            {
-                "elo": 1649.4140369263664,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_74",
-                "played": 180
-            },
-            {
-                "elo": 1644.7254857897062,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_77",
-                "played": 184
-            },
-            {
-                "elo": 1643.8006381701998,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_31",
-                "played": 105
-            },
-            {
-                "elo": 1639.051505801392,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_142",
-                "played": 118
-            },
-            {
-                "elo": 1635.520906449942,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_46",
-                "played": 437
-            },
-            {
-                "elo": 1635.5053216569793,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_80",
-                "played": 163
-            },
-            {
-                "elo": 1621.6031084865215,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_38",
-                "played": 442
-            },
-            {
-                "elo": 1610.239013417315,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_30",
-                "played": 400
-            },
-            {
-                "elo": 1609.5051198681983,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_82",
-                "played": 116
-            },
-            {
-                "elo": 1604.756644453006,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_26",
-                "played": 400
-            },
-            {
-                "elo": 1600.1650204263055,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_65",
-                "played": 125
-            },
-            {
-                "elo": 1598.5142945668672,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_50",
-                "played": 129
-            },
-            {
-                "elo": 1592.6321094903824,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_34",
-                "played": 432
-            },
-            {
-                "elo": 1582.9254137480846,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_59",
-                "played": 128
-            },
-            {
-                "elo": 1576.571742981127,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_68",
-                "played": 170
-            },
-            {
-                "elo": 1556.2866310140855,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_53",
-                "played": 118
-            },
-            {
-                "elo": 1553.3358689085205,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_62",
-                "played": 110
-            },
-            {
-                "elo": 1542.3259778149811,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_22",
-                "played": 403
-            },
-            {
-                "elo": 1536.3090862279246,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_65",
-                "played": 165
-            },
-            {
-                "elo": 1535.17781826874,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_59",
-                "played": 159
-            },
-            {
-                "elo": 1521.5150211112632,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_56",
-                "played": 124
-            },
-            {
-                "elo": 1520.6164750669486,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_56",
-                "played": 181
-            },
-            {
-                "elo": 1493.2434906483184,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_62",
-                "played": 178
-            },
-            {
-                "elo": 1492.5190711664077,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_53",
-                "played": 203
-            },
-            {
-                "elo": 1491.2915576612238,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_18",
-                "played": 391
-            },
-            {
-                "elo": 1489.7815744308662,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_26",
-                "played": 111
-            },
-            {
-                "elo": 1480.1522638418453,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_72",
-                "played": 113
-            },
-            {
-                "elo": 1478.9904950704783,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_52",
-                "played": 106
-            },
-            {
-                "elo": 1466.4307024345578,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_47",
-                "played": 125
-            },
-            {
-                "elo": 1459.6287829920848,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_41",
-                "played": 123
-            },
-            {
-                "elo": 1447.7320373676555,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_38",
+                "name": "bt8_v3_800_f1_351",
                 "played": 122
             },
             {
-                "elo": 1447.7079903730562,
+                "elo": 2987.2357785641675,
                 "fixed": false,
-                "name": "bt8_v3_800_kt3_47",
-                "played": 190
+                "name": "bt8_v3_800_f1_341",
+                "played": 123
             },
             {
-                "elo": 1441.1489106187323,
+                "elo": 2939.33641001989,
                 "fixed": false,
-                "name": "bt8_v3_800_az1_44",
-                "played": 115
+                "name": "bt8_v3_800_f1_356",
+                "played": 137
             },
             {
-                "elo": 1418.2927085148578,
+                "elo": 2933.283812922485,
                 "fixed": false,
-                "name": "bt8_v3_800_kt3_50",
-                "played": 198
+                "name": "bt8_v3_800_f1_336",
+                "played": 112
             },
             {
-                "elo": 1414.5240452641006,
+                "elo": 2925.7344461244534,
                 "fixed": false,
-                "name": "bt8_v3_800_kt5_42",
+                "name": "bt8_v3_800_f1_331",
+                "played": 119
+            },
+            {
+                "elo": 2915.82125474134,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_316",
+                "played": 143
+            },
+            {
+                "elo": 2912.4476861130856,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_361",
+                "played": 121
+            },
+            {
+                "elo": 2881.7526534030426,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_311",
+                "played": 121
+            },
+            {
+                "elo": 2877.837258159032,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_306",
+                "played": 155
+            },
+            {
+                "elo": 2870.5042846352044,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_321",
+                "played": 109
+            },
+            {
+                "elo": 2868.3881126750302,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_296",
+                "played": 163
+            },
+            {
+                "elo": 2864.8769038843598,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_286",
+                "played": 153
+            },
+            {
+                "elo": 2849.4686596330484,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_226",
+                "played": 186
+            },
+            {
+                "elo": 2831.4595112126926,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_346",
+                "played": 108
+            },
+            {
+                "elo": 2825.698612189503,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_210",
+                "played": 246
+            },
+            {
+                "elo": 2819.4650723562095,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_291",
+                "played": 128
+            },
+            {
+                "elo": 2808.054229808648,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_301",
+                "played": 134
+            },
+            {
+                "elo": 2807.999010728825,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_266",
+                "played": 153
+            },
+            {
+                "elo": 2807.5271033470854,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_198",
+                "played": 282
+            },
+            {
+                "elo": 2801.9994880720037,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_281",
+                "played": 145
+            },
+            {
+                "elo": 2796.093262022618,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_256",
+                "played": 157
+            },
+            {
+                "elo": 2784.8630551763345,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_326",
+                "played": 103
+            },
+            {
+                "elo": 2759.3676136974273,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_218",
+                "played": 188
+            },
+            {
+                "elo": 2751.212203446227,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_261",
+                "played": 122
+            },
+            {
+                "elo": 2750.1305037824627,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_246",
+                "played": 138
+            },
+            {
+                "elo": 2733.2205419831457,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_194",
+                "played": 275
+            },
+            {
+                "elo": 2726.757339855169,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_271",
+                "played": 124
+            },
+            {
+                "elo": 2714.0260006277244,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_236",
+                "played": 128
+            },
+            {
+                "elo": 2710.1403348233302,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_230",
+                "played": 195
+            },
+            {
+                "elo": 2702.353699009573,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_202",
+                "played": 240
+            },
+            {
+                "elo": 2691.4623432030494,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_222",
+                "played": 184
+            },
+            {
+                "elo": 2684.315026354983,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_231",
                 "played": 116
             },
             {
-                "elo": 1402.9585084006262,
+                "elo": 2676.6786952020097,
                 "fixed": false,
-                "name": "bt8_v3_800_kt3_38",
-                "played": 171
+                "name": "bt8_v3_800_f1_251",
+                "played": 118
             },
             {
-                "elo": 1395.5125608143028,
+                "elo": 2663.4404302106177,
                 "fixed": false,
-                "name": "bt8_v3_800_kt3_35",
+                "name": "bt8_v3_800_kt1_206",
+                "played": 216
+            },
+            {
+                "elo": 2651.0621258048745,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_276",
+                "played": 117
+            },
+            {
+                "elo": 2615.436495771382,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_201",
+                "played": 125
+            },
+            {
+                "elo": 2612.3819141434524,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_241",
+                "played": 136
+            },
+            {
+                "elo": 2598.1551571996342,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_196",
+                "played": 129
+            },
+            {
+                "elo": 2597.1401561946577,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_226",
+                "played": 121
+            },
+            {
+                "elo": 2587.4456384088235,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_174",
+                "played": 345
+            },
+            {
+                "elo": 2580.692355112767,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_216",
+                "played": 116
+            },
+            {
+                "elo": 2577.0780695254284,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_190",
+                "played": 278
+            },
+            {
+                "elo": 2564.2316564043062,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_206",
+                "played": 129
+            },
+            {
+                "elo": 2539.9019490360174,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_171",
+                "played": 146
+            },
+            {
+                "elo": 2537.0264491899557,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_221",
+                "played": 112
+            },
+            {
+                "elo": 2527.758274641086,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_214",
+                "played": 202
+            },
+            {
+                "elo": 2519.807795362262,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_211",
+                "played": 123
+            },
+            {
+                "elo": 2515.898686924879,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_156",
+                "played": 147
+            },
+            {
+                "elo": 2502.4106217229064,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_186",
+                "played": 268
+            },
+            {
+                "elo": 2493.599551633009,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_186",
+                "played": 115
+            },
+            {
+                "elo": 2486.534014213609,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_134",
+                "played": 309
+            },
+            {
+                "elo": 2480.727904813049,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_191",
+                "played": 119
+            },
+            {
+                "elo": 2468.142952343053,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_151",
+                "played": 159
+            },
+            {
+                "elo": 2464.9279920221356,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_171",
+                "played": 251
+            },
+            {
+                "elo": 2452.1663905209793,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_161",
+                "played": 175
+            },
+            {
+                "elo": 2450.5327855865935,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_166",
+                "played": 262
+            },
+            {
+                "elo": 2443.2822609010173,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_177",
+                "played": 439
+            },
+            {
+                "elo": 2429.889653974812,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_166",
+                "played": 160
+            },
+            {
+                "elo": 2403.392369644531,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_162",
+                "played": 225
+            },
+            {
+                "elo": 2400.609594708253,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_170",
+                "played": 268
+            },
+            {
+                "elo": 2394.224731424374,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_176",
+                "played": 133
+            },
+            {
+                "elo": 2388.851193664312,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_181",
+                "played": 117
+            },
+            {
+                "elo": 2363.1497934442386,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_138",
+                "played": 275
+            },
+            {
+                "elo": 2360.020586675173,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_178",
+                "played": 258
+            },
+            {
+                "elo": 2340.4322789815014,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_114",
+                "played": 333
+            },
+            {
+                "elo": 2339.5530039643436,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_182",
+                "played": 299
+            },
+            {
+                "elo": 2338.2219555354977,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_136",
+                "played": 121
+            },
+            {
+                "elo": 2333.469822470124,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_141",
+                "played": 150
+            },
+            {
+                "elo": 2331.688873492454,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_146",
+                "played": 126
+            },
+            {
+                "elo": 2328.1159251304944,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_163",
+                "played": 463
+            },
+            {
+                "elo": 2325.3392024409322,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_158",
+                "played": 435
+            },
+            {
+                "elo": 2317.074170649482,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_111",
+                "played": 125
+            },
+            {
+                "elo": 2314.2479125178534,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_142",
+                "played": 292
+            },
+            {
+                "elo": 2311.864127995954,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_116",
+                "played": 125
+            },
+            {
+                "elo": 2292.875375197882,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_118",
+                "played": 375
+            },
+            {
+                "elo": 2287.987194277788,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_126",
+                "played": 132
+            },
+            {
+                "elo": 2285.1671307701104,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_130",
+                "played": 282
+            },
+            {
+                "elo": 2276.358562936376,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_131",
+                "played": 124
+            },
+            {
+                "elo": 2275.2773603594987,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_158",
+                "played": 253
+            },
+            {
+                "elo": 2274.5967619034886,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_106",
+                "played": 418
+            },
+            {
+                "elo": 2272.549034886038,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_151",
+                "played": 281
+            },
+            {
+                "elo": 2271.071922673408,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_102",
+                "played": 348
+            },
+            {
+                "elo": 2259.982565073298,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_121",
+                "played": 138
+            },
+            {
+                "elo": 2256.646769494978,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_106",
+                "played": 125
+            },
+            {
+                "elo": 2253.1209818507555,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_101",
+                "played": 118
+            },
+            {
+                "elo": 2250.267724777077,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_110",
+                "played": 181
+            },
+            {
+                "elo": 2249.977093707447,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_145",
+                "played": 496
+            },
+            {
+                "elo": 2249.7892195952923,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_126",
+                "played": 300
+            },
+            {
+                "elo": 2239.8053156472024,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_146",
+                "played": 146
+            },
+            {
+                "elo": 2226.6349387254127,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_96",
+                "played": 127
+            },
+            {
+                "elo": 2212.109258511076,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_122",
+                "played": 289
+            },
+            {
+                "elo": 2210.4785813576013,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_152",
+                "played": 158
+            },
+            {
+                "elo": 2201.7083280402044,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_98",
+                "played": 327
+            },
+            {
+                "elo": 2201.1506260813208,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_149",
+                "played": 130
+            },
+            {
+                "elo": 2189.951445475211,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_110",
+                "played": 318
+            },
+            {
+                "elo": 2189.328950109098,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_155",
+                "played": 128
+            },
+            {
+                "elo": 2188.8746999702753,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_140",
+                "played": 151
+            },
+            {
+                "elo": 2179.433985110055,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_131",
+                "played": 152
+            },
+            {
+                "elo": 2178.5140631908907,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_113",
+                "played": 175
+            },
+            {
+                "elo": 2175.207180194145,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_123",
+                "played": 209
+            },
+            {
+                "elo": 2163.2917017839445,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_139",
+                "played": 290
+            },
+            {
+                "elo": 2154.8564653906005,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_104",
+                "played": 180
+            },
+            {
+                "elo": 2146.250617994886,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_122",
+                "played": 168
+            },
+            {
+                "elo": 2133.235935164522,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_94",
+                "played": 354
+            },
+            {
+                "elo": 2127.786276452533,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_119",
                 "played": 179
             },
             {
-                "elo": 1394.58282425609,
+                "elo": 2124.246191170216,
                 "fixed": false,
-                "name": "bt8_v3_800_f1_21",
-                "played": 104
+                "name": "bt8_v3_800_x6_111",
+                "played": 449
             },
             {
-                "elo": 1388.123916879391,
+                "elo": 2118.600860501336,
                 "fixed": false,
-                "name": "bt8_v3_800_kt1_14",
-                "played": 395
+                "name": "bt8_v3_800_kt3_116",
+                "played": 183
             },
             {
-                "elo": 1370.4980849183507,
+                "elo": 2116.97442372298,
                 "fixed": false,
-                "name": "bt8_v3_800_az1_35",
+                "name": "bt8_v3_800_kt3_137",
+                "played": 142
+            },
+            {
+                "elo": 2115.6269441243853,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_116",
+                "played": 259
+            },
+            {
+                "elo": 2115.5307570867767,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_82",
+                "played": 393
+            },
+            {
+                "elo": 2114.146417819947,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_132",
+                "played": 539
+            },
+            {
+                "elo": 2110.898102439501,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_78",
+                "played": 361
+            },
+            {
+                "elo": 2104.4473579039286,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_128",
+                "played": 157
+            },
+            {
+                "elo": 2103.3959561774723,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_74",
+                "played": 433
+            },
+            {
+                "elo": 2103.2219610665124,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_86",
+                "played": 387
+            },
+            {
+                "elo": 2097.8433342735143,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_86",
+                "played": 117
+            },
+            {
+                "elo": 2095.005282092448,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_154",
+                "played": 227
+            },
+            {
+                "elo": 2091.2673457954184,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_90",
+                "played": 396
+            },
+            {
+                "elo": 2090.7817763019957,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_134",
+                "played": 146
+            },
+            {
+                "elo": 2072.6945456263747,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_106",
+                "played": 245
+            },
+            {
+                "elo": 2060.7819222837184,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_143",
+                "played": 158
+            },
+            {
+                "elo": 2015.672154473765,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_150",
+                "played": 294
+            },
+            {
+                "elo": 2002.3709025557869,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_102",
+                "played": 455
+            },
+            {
+                "elo": 2001.0045568206565,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_127",
+                "played": 267
+            },
+            {
+                "elo": 1999.2745119227689,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_125",
+                "played": 172
+            },
+            {
+                "elo": 1986.2005448882587,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_107",
+                "played": 210
+            },
+            {
+                "elo": 1986.0738786399036,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_76",
+                "played": 121
+            },
+            {
+                "elo": 1950.5592144974346,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_81",
+                "played": 115
+            },
+            {
+                "elo": 1947.5922024647532,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_91",
+                "played": 113
+            },
+            {
+                "elo": 1943.8113949247947,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_212",
+                "played": 135
+            },
+            {
+                "elo": 1942.7729024498578,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_96",
+                "played": 238
+            },
+            {
+                "elo": 1921.5060301148562,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_71",
+                "played": 122
+            },
+            {
+                "elo": 1908.899884308505,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_202",
+                "played": 146
+            },
+            {
+                "elo": 1905.9282249647742,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_46",
+                "played": 118
+            },
+            {
+                "elo": 1892.4255851491268,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_66",
+                "played": 397
+            },
+            {
+                "elo": 1888.100326985283,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_51",
                 "played": 125
             },
             {
-                "elo": 1357.2061413351926,
+                "elo": 1875.0628051497158,
                 "fixed": false,
-                "name": "bt8_v3_800_kt3_44",
-                "played": 181
-            },
-            {
-                "elo": 1354.5772926243155,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_26",
-                "played": 131
-            },
-            {
-                "elo": 1347.8692263416203,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_29",
-                "played": 181
-            },
-            {
-                "elo": 1341.9801363900153,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_41",
-                "played": 165
-            },
-            {
-                "elo": 1321.775067203116,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_23",
-                "played": 125
-            },
-            {
-                "elo": 1319.7214221102884,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_10",
+                "name": "bt8_v3_800_kt1_70",
                 "played": 352
             },
             {
-                "elo": 1315.425627491846,
+                "elo": 1873.0905548116384,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_56",
+                "played": 120
+            },
+            {
+                "elo": 1871.4209264516328,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_162",
+                "played": 154
+            },
+            {
+                "elo": 1871.3533626858114,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_41",
+                "played": 113
+            },
+            {
+                "elo": 1866.2190397693894,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_172",
+                "played": 137
+            },
+            {
+                "elo": 1838.9913507100323,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_182",
+                "played": 133
+            },
+            {
+                "elo": 1831.2015974331382,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_66",
+                "played": 115
+            },
+            {
+                "elo": 1823.7922230392337,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_192",
+                "played": 130
+            },
+            {
+                "elo": 1817.2759376134748,
+                "fixed": false,
+                "name": "bt8_v3_800_x6_90",
+                "played": 431
+            },
+            {
+                "elo": 1802.2431780746501,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_61",
+                "played": 114
+            },
+            {
+                "elo": 1794.8482510838069,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_98",
+                "played": 189
+            },
+            {
+                "elo": 1789.1214545647922,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_62",
+                "played": 423
+            },
+            {
+                "elo": 1780.6285624224288,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_102",
+                "played": 114
+            },
+            {
+                "elo": 1777.811998099838,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_92",
+                "played": 167
+            },
+            {
+                "elo": 1774.8497831670581,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_152",
+                "played": 131
+            },
+            {
+                "elo": 1773.163086686081,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_86",
+                "played": 173
+            },
+            {
+                "elo": 1772.660139541455,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_42",
+                "played": 431
+            },
+            {
+                "elo": 1767.9475641409229,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_146",
+                "played": 314
+            },
+            {
+                "elo": 1747.7234313597278,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_132",
+                "played": 137
+            },
+            {
+                "elo": 1745.715625404766,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_112",
+                "played": 127
+            },
+            {
+                "elo": 1742.9015816935596,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_50",
+                "played": 406
+            },
+            {
+                "elo": 1738.2550771597557,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_95",
+                "played": 176
+            },
+            {
+                "elo": 1731.5145278937052,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_54",
+                "played": 409
+            },
+            {
+                "elo": 1728.9861413564556,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_83",
+                "played": 185
+            },
+            {
+                "elo": 1720.443492969228,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_36",
+                "played": 117
+            },
+            {
+                "elo": 1711.5529630507115,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_92",
+                "played": 126
+            },
+            {
+                "elo": 1709.0976257972552,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_58",
+                "played": 398
+            },
+            {
+                "elo": 1697.0441687322073,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_62",
+                "played": 130
+            },
+            {
+                "elo": 1691.5298273420337,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_122",
+                "played": 124
+            },
+            {
+                "elo": 1686.6402643885751,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_101",
+                "played": 171
+            },
+            {
+                "elo": 1679.0716645267223,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_89",
+                "played": 182
+            },
+            {
+                "elo": 1675.3950495719973,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_71",
+                "played": 196
+            },
+            {
+                "elo": 1649.371594651551,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_74",
+                "played": 183
+            },
+            {
+                "elo": 1641.4639046987602,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_31",
+                "played": 110
+            },
+            {
+                "elo": 1639.5561970627891,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_77",
+                "played": 189
+            },
+            {
+                "elo": 1634.955558487061,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_142",
+                "played": 121
+            },
+            {
+                "elo": 1634.1464490404553,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_46",
+                "played": 444
+            },
+            {
+                "elo": 1627.1700291577847,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_30",
+                "played": 407
+            },
+            {
+                "elo": 1626.8893895993272,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_80",
+                "played": 171
+            },
+            {
+                "elo": 1614.328483821486,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_38",
+                "played": 452
+            },
+            {
+                "elo": 1609.8054576851641,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_82",
+                "played": 125
+            },
+            {
+                "elo": 1604.015312565485,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_26",
+                "played": 405
+            },
+            {
+                "elo": 1600.440983127132,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_50",
+                "played": 134
+            },
+            {
+                "elo": 1599.8458386306186,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_65",
+                "played": 130
+            },
+            {
+                "elo": 1594.6840286633699,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_34",
+                "played": 435
+            },
+            {
+                "elo": 1580.2898157694808,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_59",
+                "played": 134
+            },
+            {
+                "elo": 1575.222547838609,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_68",
+                "played": 175
+            },
+            {
+                "elo": 1556.2346530502261,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_53",
+                "played": 122
+            },
+            {
+                "elo": 1553.268128106015,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_62",
+                "played": 116
+            },
+            {
+                "elo": 1538.1365871442752,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_22",
+                "played": 408
+            },
+            {
+                "elo": 1529.710052659596,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_65",
+                "played": 171
+            },
+            {
+                "elo": 1528.5590093018966,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_59",
+                "played": 162
+            },
+            {
+                "elo": 1519.1482731579604,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_56",
+                "played": 129
+            },
+            {
+                "elo": 1518.2978919107954,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_56",
+                "played": 184
+            },
+            {
+                "elo": 1489.4093470439977,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_62",
+                "played": 182
+            },
+            {
+                "elo": 1487.294560652745,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_18",
+                "played": 396
+            },
+            {
+                "elo": 1486.090596521841,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_53",
+                "played": 210
+            },
+            {
+                "elo": 1483.7256259160326,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_26",
+                "played": 116
+            },
+            {
+                "elo": 1479.9610965126938,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_72",
+                "played": 115
+            },
+            {
+                "elo": 1478.6658525517182,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_52",
+                "played": 113
+            },
+            {
+                "elo": 1466.3866601823702,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_47",
+                "played": 132
+            },
+            {
+                "elo": 1459.595060757644,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_41",
+                "played": 126
+            },
+            {
+                "elo": 1448.562684510439,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_38",
+                "played": 128
+            },
+            {
+                "elo": 1445.13688453095,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_47",
+                "played": 192
+            },
+            {
+                "elo": 1441.1084883113833,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_44",
+                "played": 119
+            },
+            {
+                "elo": 1418.2595932170284,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_50",
+                "played": 203
+            },
+            {
+                "elo": 1414.521473691355,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_42",
+                "played": 117
+            },
+            {
+                "elo": 1402.9524567031942,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_38",
+                "played": 173
+            },
+            {
+                "elo": 1394.5799846482546,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_21",
+                "played": 105
+            },
+            {
+                "elo": 1392.262276262008,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_35",
+                "played": 185
+            },
+            {
+                "elo": 1386.8072859153876,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_14",
+                "played": 402
+            },
+            {
+                "elo": 1362.0174669897,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_35",
+                "played": 132
+            },
+            {
+                "elo": 1357.017305134066,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_44",
+                "played": 188
+            },
+            {
+                "elo": 1354.5636966415916,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_26",
+                "played": 136
+            },
+            {
+                "elo": 1345.9042514600249,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_29",
+                "played": 185
+            },
+            {
+                "elo": 1341.962284541486,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_41",
+                "played": 168
+            },
+            {
+                "elo": 1320.9176076575734,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_23",
+                "played": 129
+            },
+            {
+                "elo": 1319.1901393256985,
+                "fixed": false,
+                "name": "bt8_v3_800_kt1_10",
+                "played": 356
+            },
+            {
+                "elo": 1315.4158188911465,
                 "fixed": false,
                 "name": "bt8_v3_800_az1_32",
-                "played": 113
+                "played": 116
             },
             {
                 "elo": 1310.6946122834313,
@@ -1199,208 +1343,172 @@
                 "played": 154
             },
             {
-                "elo": 1293.4472093851311,
+                "elo": 1293.444655304589,
                 "fixed": false,
                 "name": "bt8_v3_800_kt3_26",
-                "played": 177
+                "played": 179
             },
             {
-                "elo": 1274.3973418976625,
+                "elo": 1273.9346557721235,
                 "fixed": false,
                 "name": "bt8_v3_800_az1_29",
-                "played": 130
-            },
-            {
-                "elo": 1268.6465851877624,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_32",
-                "played": 118
-            },
-            {
-                "elo": 1268.5393644186713,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_20",
-                "played": 124
-            },
-            {
-                "elo": 1243.9977569531047,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_16",
-                "played": 101
-            },
-            {
-                "elo": 1198.7898871190052,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_23",
-                "played": 162
-            },
-            {
-                "elo": 1190.6512703941198,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_22",
-                "played": 119
-            },
-            {
-                "elo": 1181.3017941715516,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_7",
-                "played": 333
-            },
-            {
-                "elo": 1170.0415361657058,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_20",
-                "played": 166
-            },
-            {
-                "elo": 1156.5381269796462,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_11",
-                "played": 106
-            },
-            {
-                "elo": 1125.9008935329723,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_5",
-                "played": 322
-            },
-            {
-                "elo": 1117.372793169133,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_17",
-                "played": 176
-            },
-            {
-                "elo": 1109.3537201582765,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_14",
-                "played": 121
-            },
-            {
-                "elo": 1093.6709513553078,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_11",
-                "played": 122
-            },
-            {
-                "elo": 1091.3820097860555,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_4",
-                "played": 321
-            },
-            {
-                "elo": 1076.4374697566502,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_14",
-                "played": 159
-            },
-            {
-                "elo": 1054.3103249851654,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_6",
-                "played": 104
-            },
-            {
-                "elo": 1032.3001323069295,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_11",
-                "played": 183
-            },
-            {
-                "elo": 1020.4654666714965,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_17",
-                "played": 126
-            },
-            {
-                "elo": 1004.2164608069692,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_3",
-                "played": 328
-            },
-            {
-                "elo": 943.4755477057589,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_2",
-                "played": 301
-            },
-            {
-                "elo": 938.4965983261677,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_8",
-                "played": 114
-            },
-            {
-                "elo": 908.6158460657726,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_8",
-                "played": 153
-            },
-            {
-                "elo": 903.0422895010137,
-                "fixed": false,
-                "name": "bt8_v3_800_kt5_12",
-                "played": 121
-            },
-            {
-                "elo": 885.1531194710303,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_5",
-                "played": 117
-            },
-            {
-                "elo": 878.2740644224075,
-                "fixed": false,
-                "name": "bt8_v3_800_kt3_5",
-                "played": 147
-            },
-            {
-                "elo": 869.158044258854,
-                "fixed": false,
-                "name": "simplemcts",
-                "played": 295
-            },
-            {
-                "elo": 815.5459968066833,
-                "fixed": false,
-                "name": "pymcs",
-                "played": 290
-            },
-            {
-                "elo": 797.013897814101,
-                "fixed": false,
-                "name": "bt8_v3_800_kt1_1",
-                "played": 286
-            },
-            {
-                "elo": 681.9018266191256,
-                "fixed": false,
-                "name": "bt8_v3_800_f1_1",
-                "played": 102
-            },
-            {
-                "elo": 642.5441382911478,
-                "fixed": false,
-                "name": "bt8_v3_800_az1_2",
                 "played": 133
             },
             {
-                "elo": 599.4129150337828,
+                "elo": 1268.6425587547346,
                 "fixed": false,
-                "name": "bt8_v3_800_kt3_2",
-                "played": 150
+                "name": "bt8_v3_800_kt5_32",
+                "played": 121
             },
             {
-                "elo": 536.8661426896958,
+                "elo": 1268.5331043315239,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_20",
+                "played": 127
+            },
+            {
+                "elo": 1243.9969229040266,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_16",
+                "played": 102
+            },
+            {
+                "elo": 1198.571634736188,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_23",
+                "played": 168
+            },
+            {
+                "elo": 1190.0406119225113,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_22",
+                "played": 123
+            },
+            {
+                "elo": 1170.0384086359031,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_20",
+                "played": 169
+            },
+            {
+                "elo": 1156.280922945294,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_11",
+                "played": 108
+            },
+            {
+                "elo": 1117.0009636595184,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_17",
+                "played": 178
+            },
+            {
+                "elo": 1109.3531261909538,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_14",
+                "played": 123
+            },
+            {
+                "elo": 1093.2985968095263,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_11",
+                "played": 127
+            },
+            {
+                "elo": 1076.4236608898045,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_14",
+                "played": 165
+            },
+            {
+                "elo": 1054.3095678316474,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_6",
+                "played": 106
+            },
+            {
+                "elo": 1032.2993712180798,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_11",
+                "played": 186
+            },
+            {
+                "elo": 1020.2152156927838,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_17",
+                "played": 128
+            },
+            {
+                "elo": 938.4890408552459,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_8",
+                "played": 118
+            },
+            {
+                "elo": 908.5744216247456,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_8",
+                "played": 158
+            },
+            {
+                "elo": 903.0412405172245,
+                "fixed": false,
+                "name": "bt8_v3_800_kt5_12",
+                "played": 126
+            },
+            {
+                "elo": 885.0294801130495,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_5",
+                "played": 123
+            },
+            {
+                "elo": 878.2398005315301,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_5",
+                "played": 152
+            },
+            {
+                "elo": 869.1573570060516,
+                "fixed": false,
+                "name": "simplemcts",
+                "played": 298
+            },
+            {
+                "elo": 815.4372844900461,
+                "fixed": false,
+                "name": "pymcs",
+                "played": 295
+            },
+            {
+                "elo": 681.9016367164268,
+                "fixed": false,
+                "name": "bt8_v3_800_f1_1",
+                "played": 104
+            },
+            {
+                "elo": 642.5438352175846,
+                "fixed": false,
+                "name": "bt8_v3_800_az1_2",
+                "played": 137
+            },
+            {
+                "elo": 599.4127721921147,
+                "fixed": false,
+                "name": "bt8_v3_800_kt3_2",
+                "played": 153
+            },
+            {
+                "elo": 536.8659952825334,
                 "fixed": false,
                 "name": "bt8_v3_800_kt5_2",
-                "played": 109
+                "played": 112
             },
             {
                 "elo": 500.0,
                 "fixed": true,
                 "name": "random",
-                "played": 283
+                "played": 287
             }
         ],
         "players__clzlist__": [

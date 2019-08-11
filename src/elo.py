@@ -7,6 +7,8 @@ from functools import partial
 # 3rd party: https://github.com/google/python-fire
 import fire
 
+from ggplib.util import log
+
 from ggpzero.util import attrutil as at
 from ggpzero.util import symmetry
 from ggpzero.nn import manager
@@ -14,9 +16,9 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 20
+NUM_GAMES = 25
 MOVE_TIME = 30.0
-RESIGN_PCT = 0.05
+RESIGN_PCT = -1
 STARTING_ELO = 1500.0
 MAX_ADD_COUNT = 200
 
@@ -41,8 +43,8 @@ def next_elo_rating(rating_a, rating_b, k0, k1, player_a_wins):
         new_rating_a = rating_a + k0 * (0.0 - pa)
         new_rating_b = rating_b + k1 * (1.0 - pb)
 
-    print 'rating_a', k0, rating_a, new_rating_a
-    print 'rating_b', k1, rating_b, new_rating_b
+    log.info("rating_a k=%s %s -> %s" % (k0, rating_a, new_rating_a))
+    log.info("rating_b k=%s %s -> %s" % (k1, rating_b, new_rating_b))
     return new_rating_a, new_rating_b
 
 
@@ -66,7 +68,6 @@ class AllRatings(object):
 
 
 def define_player(game, gen, playouts, version, **extra_opts):
-    print "XXX", game, gen, playouts, version, extra_opts
     opts = dict(verbose=True,
                 puct_constant=0.85,
 
@@ -139,15 +140,17 @@ def define_player(game, gen, playouts, version, **extra_opts):
         assert False, "invalid version: %s" % version
 
 
-def elo_dump_and_save(filename, ratings):
-    print "ELO DUMP:"
-    print "========="
+def elo_dump_and_save(filename, ratings, verbose=False):
+    if verbose:
+        print "ELO DUMP:"
+        print "========="
 
     # sort in place, so also benefit by saving in this order
     ratings.players.sort(reverse=True,
                          key=operator.attrgetter("elo"))
-    for p in ratings.players:
-        print p.name, p.played, p.elo
+    if verbose:
+        for p in ratings.players:
+            print p.name, p.played, p.elo
 
     with open(filename, "w") as f:
         contents = at.attr_to_json(ratings, pretty=True)
@@ -224,7 +227,7 @@ def choose_players(all_players, verbose=False):
         return second_player, first_player
 
 
-def gen_elo(match_info, all_players, filename, move_generator=None):
+def gen_elo(match_info, all_players, filename, move_generator=None, verbose=False):
     if os.path.exists(filename):
         ratings = at.json_to_attr(open(filename).read())
     else:
@@ -236,7 +239,8 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
     # slow add one playeer
     slow_add_count = 0
     for p in all_players:
-        print "Adding", p.get_name()
+        if verbose:
+            print "Adding", p.get_name()
 
         playerinfo = None
         for info in ratings.players:
@@ -245,7 +249,8 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
 
         if playerinfo is None:
             if slow_add_count >= MAX_ADD_COUNT:
-                print "SKIPPING for now", playerinfo
+                if verbose:
+                    print "SKIPPING for now", playerinfo
                 continue
             else:
                 playerinfo = PlayerRating(p.get_name(), 0, STARTING_ELO)
@@ -264,7 +269,7 @@ def gen_elo(match_info, all_players, filename, move_generator=None):
                 found = True
 
         if not found:
-            print "NOT FOUND", rated_player.name
+            log.warning("Dangling rating in elo file: %s" % rated_player.name)
 
     # update the ratings with players
     elo_dump_and_save(filename, ratings)
@@ -608,6 +613,7 @@ class Runner(object):
                                  depth_temperature_start=4,
                                  random_scale=0.5)
 
+
         # 3 models ran on LG
         all_players = [dp(g, 800, 3) for g in ("x6_90",
                                                "x6_96",
@@ -652,7 +658,6 @@ class Runner(object):
                 num += incr
 
         all_players += [dp(g, 800, 3) for g in gens]
-
         random_player = get_player("r", MOVE_TIME)
         mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
         simplemcts_player = get_player("s", MOVE_TIME, max_tree_playout_iterations=800)
@@ -669,16 +674,52 @@ class Runner(object):
         def dp(g, playouts, v):
             return define_player("az", g, playouts, v,
                                  dirichlet_noise_pct=0.15,
-                                 depth_temperature_stop=6,
-                                 depth_temperature_start=6,
+                                 depth_temperature_stop=4,
+                                 depth_temperature_start=4,
                                  random_scale=0.9)
 
         gens = []
-        for name, incr in (["h1", 5], ["h3", 10]):
-            num = 7
+        for name, num, incr in (["h1", 7, 5],
+                                ["h3", 7, 10],
+                                ["f1", 1, 4]):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("amazons_10x10", gen):
+                    print "FAILED TO LOAD GEN", gen
+                    break
+
+                gens.append(gen)
+                num += incr
+
+        all_players = [dp(g, 800, 3) for g in gens]
+
+        random_player = get_player("r", MOVE_TIME)
+        mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
+        simplemcts_player = get_player("s", MOVE_TIME, max_tree_playout_iterations=800)
+        all_players += [random_player, mcs_player, simplemcts_player]
+
+        gen_elo(match_info, all_players, filename)
+
+
+    def hex11(self, filename="../data/elo/hex11.elo"):
+        man = manager.get_manager()
+
+        from ggpzero.battle.hex import MatchInfo
+        match_info = MatchInfo(11)
+
+        def dp(g, playouts, v):
+            return define_player("hex11", g, playouts, v,
+                                 dirichlet_noise_pct=0.15,
+                                 depth_temperature_stop=4,
+                                 depth_temperature_start=4,
+                                 random_scale=0.9)
+
+        gens = []
+        for name, num, incr in (["h1", 5, 8],
+                                ["b1", 3, 5]):
+            while True:
+                gen = "%s_%s" % (name, num)
+                if not man.can_load("hexLG11", gen):
                     print "FAILED TO LOAD GEN", gen
                     break
 
@@ -756,7 +797,7 @@ class Runner(object):
 
 
         # note x1_7x was Scan first match
-        # note x2_119 was Scan second match (i think)
+        # note x2_119 (or 121) was Scan second match (i think)
 
         # retrained new_x2_174... not sure what x2 state was in...
         # going to aggregate x2 and h3 and see if total makes stronger

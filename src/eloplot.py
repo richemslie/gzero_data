@@ -53,7 +53,11 @@ def main(genname_mapping, filename, gen_modifier=None, check_evals=800):
                     datapoints[0].append(gen)
                     datapoints[1].append(p.elo)
 
-                    was_evals = str(check_evals) in p.name
+                    if check_evals is not None:
+                        was_evals = str(check_evals) in p.name
+                    else:
+                        was_evals = True
+
                     break
             else:
                 print "UNHANDLED", p.name
@@ -104,7 +108,10 @@ class Runner(object):
                 gen /= 2
             return gen
 
-        mapping = dict(
+        mapping = OrderedDict(
+            policy="yx")
+
+        mapping.update(
             x6="ro",
             f1="yo",
             kt1="bo",
@@ -112,7 +119,9 @@ class Runner(object):
             kt3="mo",
             az1="go")
 
-        self._main(mapping, "../data/elo/bt8.elo", gen_modifier=gen_modifier)
+        self._main(mapping, "../data/elo/bt8.elo",
+                   gen_modifier=gen_modifier,
+                   check_evals=None)
 
     def hex13(self, do_long=False):
         def gen_modifier(name):
@@ -151,6 +160,13 @@ class Runner(object):
             #, gen_modifier=gen_modifier
             self._main(mapping, "../data/elo/hex13.elo")
 
+    def hex11(self, do_long=False):
+        mapping = dict(
+            h1="go",
+            b1="co")
+
+        self._main(mapping, "../data/elo/hex11.elo")
+
 
     def c6(self):
         mapping = dict(
@@ -162,7 +178,8 @@ class Runner(object):
     def az(self):
         mapping = dict(
             h1="ro",
-            h3="go")
+            h3="go",
+            f1="yo")
 
         self._main(mapping, "../data/elo/amazons.elo")
 
