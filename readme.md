@@ -1,4 +1,6 @@
 Trained models for gzero
 ========================
 
-Test
+Models and ELO graphs for various games that were trained with gzero.
+
+

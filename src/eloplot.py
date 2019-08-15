@@ -100,7 +100,7 @@ class Runner(object):
         Runner._elo_min = elo_min
         Runner._looptimes = looptimes
 
-    def bt(self):
+    def bt8(self):
 
         def gen_modifier(name):
             gen = int(name.split('_')[-1])
@@ -140,6 +140,7 @@ class Runner(object):
             return gen
 
         mapping = dict(
+            b1="b^",
             c1="ro",
             h1="go",
             best="yx",
@@ -167,6 +168,13 @@ class Runner(object):
 
         self._main(mapping, "../data/elo/hex11.elo")
 
+    def bt6(self, do_long=False):
+        mapping = dict(
+            x1="go",
+            h2="ro",
+            b1="co")
+
+        self._main(mapping, "../data/elo/bt6.elo")
 
     def c6(self):
         mapping = dict(

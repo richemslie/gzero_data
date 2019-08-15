@@ -19,7 +19,7 @@ from ggpzero.battle.common import get_player, run, MatchTooLong
 NUM_GAMES = 25
 MOVE_TIME = 30.0
 RESIGN_PCT = -1
-STARTING_ELO = 1500.0
+STARTING_ELO = 1000.0
 MAX_ADD_COUNT = 200
 
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
@@ -532,6 +532,7 @@ class Runner(object):
 
         for name, num, incr in (["c2", 252, 3],
                                 ["d1", 5, 10],
+                                ["b1", 3, 5],
                                 ["d2", 113, 3]):
 
             while True:
@@ -720,6 +721,40 @@ class Runner(object):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("hexLG11", gen):
+                    print "FAILED TO LOAD GEN", gen
+                    break
+
+                gens.append(gen)
+                num += incr
+
+        all_players = [dp(g, 800, 3) for g in gens]
+
+        random_player = get_player("r", MOVE_TIME)
+        mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
+        simplemcts_player = get_player("s", MOVE_TIME, max_tree_playout_iterations=800)
+        all_players += [random_player, mcs_player, simplemcts_player]
+
+        gen_elo(match_info, all_players, filename)
+
+    def bt6(self, filename="../data/elo/bt6.elo"):
+        man = manager.get_manager()
+
+        from ggpzero.battle.bt import MatchInfo
+        match_info = MatchInfo(6)
+
+        def dp(g, playouts, v):
+            return define_player("bt6", g, playouts, v,
+                                 depth_temperature_stop=4,
+                                 depth_temperature_start=4,
+                                 random_scale=0.5)
+
+        gens = []
+        for name, num, incr in (["x1", 5, 8],
+                                ["h2", 7, 8],
+                                ["b1", 3, 5]):
+            while True:
+                gen = "%s_%s" % (name, num)
+                if not man.can_load("breakthroughSmall", gen):
                     print "FAILED TO LOAD GEN", gen
                     break
 
