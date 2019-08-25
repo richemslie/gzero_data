@@ -21,6 +21,7 @@ MOVE_TIME = 30.0
 RESIGN_PCT = -1
 STARTING_ELO = 1000.0
 MAX_ADD_COUNT = 200
+INITIAL_K = 100.0
 
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
 
@@ -295,7 +296,7 @@ def gen_elo(match_info, all_players, filename, move_generator=None, verbose=Fals
 
             (_, score0), (_, score1) = res[1]
             res_str = ""
-            k = 42 * 2.5
+            k = INITIAL_K
             if score0 == 100:
                 res_str = "1st player wins"
                 player0_wins = True
@@ -330,8 +331,12 @@ def gen_elo(match_info, all_players, filename, move_generator=None, verbose=Fals
             if r.fixed:
                 return 0.0
 
+            if r.played < 10:
+                return k * 2
+
             if r.played < 20:
-                return k * 2.5
+                scale = 1.0 + (20 - r.played) / 2.0
+                return k * scale
 
             if r.played < 40:
                 return k
