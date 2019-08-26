@@ -538,6 +538,7 @@ class Runner(object):
         for name, num, incr in (["c2", 252, 3],
                                 ["d1", 5, 10],
                                 ["b1", 3, 5],
+                                ["b2", 100, 5],
                                 ["d2", 113, 3]):
 
             while True:
@@ -880,37 +881,11 @@ class Runner(object):
                                  max_dump_depth=1,
                                  evaluation_multiplier_to_convergence=2.0,
                                  batch_size=8,
-                                 noise_policy_squash_pct=0.5,
-                                 noise_policy_squash_prob=0.25,
+                                 noise_policy_squash_pct=0.75,
+                                 noise_policy_squash_prob=0.1,
                                  fpu_prior_discount_root=0.1,
                                  fpu_prior_discount=0.2,
-                                 random_scale=0.8)
-
-        def dp_policy(g, v):
-            return define_player("policy", g, 1, v,
-                                 temperature=2.0,
-                                 dirichlet_noise_pct=-1,
-                                 depth_temperature_stop=6,
-                                 depth_temperature_start=6,
-                                 max_dump_depth=1,
-                                 batch_size=1,
-                                 noise_policy_squash_pct=-1,
-                                 noise_policy_squash_prob=-1,
-                                 random_scale=0.8)
-
-        def dp_minimal(g, v):
-            return define_player("minimal", g, 8, v,
-                                 temperature=2.0,
-                                 dirichlet_noise_pct=-1,
-                                 depth_temperature_stop=6,
-                                 depth_temperature_start=6,
-                                 max_dump_depth=1,
-                                 batch_size=1,
-                                 fpu_prior_discount_root=0.05,
-                                 fpu_prior_discount=0.05,
-                                 noise_policy_squash_pct=-1,
-                                 noise_policy_squash_prob=-1,
-                                 random_scale=0.5)
+                                 random_scale=0.6)
 
         man = manager.get_manager()
 
@@ -925,8 +900,7 @@ class Runner(object):
         gens = []
         for name, num, incr in (["c1", 5, 7],
                                 ["kb1", 3, 5],
-                                ["c2", 145, 5],
-                                ["d1", 3, 5]):
+                                ["c2", 145, 5]):
             while True:
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("chess_15d", gen):
@@ -938,8 +912,6 @@ class Runner(object):
 
         gens.append("c2_367")
         all_players += [dp(g, 800, 3) for g in gens]
-        all_players += [dp_policy(g, 3) for g in ["c2_375"]]
-        all_players += [dp_minimal(g, 3) for g in ["c2_375"]]
         gen_elo(match_info, all_players, filename)
 
 

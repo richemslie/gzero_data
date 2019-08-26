@@ -141,6 +141,7 @@ class Runner(object):
 
         mapping = dict(
             b1="b^",
+            b2="r^",
             c1="ro",
             h1="go",
             best="yx",
