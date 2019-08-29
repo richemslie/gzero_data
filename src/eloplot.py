@@ -29,11 +29,14 @@ class AllRatings(object):
     log = at.attribute(default=at.attr_factory(list))
 
 
-def main(genname_mapping, filename, gen_modifier=None, check_evals=800):
+def main(genname_mapping, filename, gen_modifier=None,
+         ignore_non_models=False, check_evals=800):
     ratings = at.json_to_attr(open(filename).read())
     genmodel_to_data = {}
 
-    fig = plt.figure(figsize=(16,12))
+    # side effect of setting the size of graph
+    plt.figure(figsize=(18, 14))
+
     def get(name):
         if name not in genmodel_to_data:
             genmodel_to_data[name] = ([], [])
@@ -72,12 +75,13 @@ def main(genname_mapping, filename, gen_modifier=None, check_evals=800):
                 plt.text(gen, p.elo, txt)
 
         else:
-            plt.plot(-10, [p.elo], "bx")
-            txt = "  " + p.name
-            if p.played < Runner._elo_min:
-                txt += "  %s" % p.played
+            if not ignore_non_models:
+                plt.plot(-10, [p.elo], "bx")
+                txt = "  " + p.name
+                if p.played < Runner._elo_min:
+                    txt += "  %s" % p.played
 
-            plt.text(-10, p.elo, txt)
+                plt.text(-10, p.elo, txt)
 
     for name, color in genname_mapping.items():
         datapoints = get(name)
@@ -86,7 +90,6 @@ def main(genname_mapping, filename, gen_modifier=None, check_evals=800):
 
     plt.ylabel("ELO")
     plt.xlabel("Generation")
-    mng = plt.get_current_fig_manager()
     plt.legend(loc='lower right')
     plt.show()
 
@@ -123,14 +126,23 @@ class Runner(object):
                    gen_modifier=gen_modifier,
                    check_evals=None)
 
-    def hex13(self, do_long=False):
+    def hex13(self):
+
         def gen_modifier(name):
             gen = int(name.split('_')[-1])
-            if not do_long and "c2_" in name:
+
+            if "d1x" in name:
+                gen += 250
+
+            elif "c2_" in name:
                 gen += 275
+
+            elif "b2" in name:
+                gen += 350
 
             elif "d2_" in name:
                 gen += 450
+
             else:
                 for prefix in ("h4", "h5", "h6"):
                     if prefix in name:
@@ -139,37 +151,43 @@ class Runner(object):
 
             return gen
 
-        mapping = dict(
-            b1="b^",
-            b2="r^",
-            c1="ro",
-            h1="go",
-            best="yx",
-            d1_drop_="mx",
-            h2="yo",
-            h4="gx",
-            h5="yx",
-            h6="yx",
-            c2="bo",
-            d1_="mo",
-            d1x="mx",
-            d2="co")
+        minimal = True
+        if minimal:
+            mapping = dict(
+                b2="go",
+                c2="co",
+                d1x="mx",
+                d2="c^")
 
-        if do_long:
-            self._main(mapping, "../data/elo/hex13_long.elo", gen_modifier=gen_modifier,
-                       check_evals=3200)
+            self._main(mapping, "../data/elo/hex13.elo",
+                       gen_modifier=gen_modifier, ignore_non_models=True)
+
         else:
-            #, gen_modifier=gen_modifier
-            self._main(mapping, "../data/elo/hex13.elo")
+            mapping = dict(
+                b1="b^",
+                b2="r^",
+                c1="ro",
+                h1="go",
+                best="yx",
+                h2="yo",
+                h4="gx",
+                h5="yx",
+                h6="yx",
+                c2="bo",
+                d1_="mo",
+                d1x="mx",
+                d2="co")
 
-    def hex11(self, do_long=False):
+            self._main(mapping, "../data/elo/hex13.elo", gen_modifier=gen_modifier)
+
+    def hex11(self):
         mapping = dict(
             h1="go",
             b1="co")
 
         self._main(mapping, "../data/elo/hex11.elo")
 
-    def bt6(self, do_long=False):
+    def bt6(self):
         mapping = dict(
             x1="go",
             h2="ro",
