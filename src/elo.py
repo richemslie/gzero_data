@@ -16,10 +16,10 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 25
+NUM_GAMES = 30
 MOVE_TIME = 30.0
 RESIGN_PCT = -1
-STARTING_ELO = 1000.0
+STARTING_ELO = 1500.0
 MAX_ADD_COUNT = 200
 INITIAL_K = 100.0
 
@@ -532,14 +532,18 @@ class Runner(object):
                   "d1_197", "d1x_310", "d1x_312", "d1x_317", "d1x_305",
                   "d2_110", "d2_112", "d2_139"]
 
+        recent = ["b4_256", "b4_260", "b4_264", "b4_265", "b4_275", "b4_277"]
+
         man = manager.get_manager()
 
 
         for name, num, incr in (["c2", 252, 3],
                                 ["d1", 5, 10],
+                                ["d2", 113, 3],
                                 ["b1", 3, 5],
                                 ["b2", 100, 5],
-                                ["d2", 113, 3]):
+                                ["b3", 160, 5],
+                                ["b4", 280, 5]):
 
             while True:
                 gen = "%s_%s" % (name, num)
@@ -550,7 +554,7 @@ class Runner(object):
                 gens.append(gen)
                 num += incr
 
-        all_players += [dp(g, 800, 3) for g in gens + new_c1 + others]
+        all_players += [dp(g, 800, 3) for g in gens + new_c1 + others + recent]
 
         gen_elo(match_info, all_players, filename,
                 move_generator=move_generator_hex13)

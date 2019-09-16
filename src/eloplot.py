@@ -140,6 +140,12 @@ class Runner(object):
             elif "b2" in name:
                 gen += 350
 
+            elif "b3" in name:
+                gen += 710 - 40
+
+            elif "b4" in name:
+                gen += 200
+
             elif "d2_" in name:
                 gen += 450
 
@@ -151,7 +157,7 @@ class Runner(object):
 
             return gen
 
-        minimal = True
+        minimal = False
         if minimal:
             mapping = dict(
                 b2="go",
@@ -166,6 +172,8 @@ class Runner(object):
             mapping = dict(
                 b1="b^",
                 b2="r^",
+                b3="c^",
+                b4="g^",
                 c1="ro",
                 h1="go",
                 best="yx",
