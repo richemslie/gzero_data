@@ -897,9 +897,7 @@ class Runner(object):
         match_info = chess.MatchInfo(short_50=True)
 
         random_player = get_player("r", MOVE_TIME)
-        mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
-        simplemcts_player = get_player("s", MOVE_TIME, max_tree_playout_iterations=800)
-        all_players = [random_player]  # mcs_player , simplemcts_player
+        all_players = [random_player]
 
         gens = []
         for name, num, incr in (["c1", 5, 7],
@@ -915,6 +913,40 @@ class Runner(object):
                 num += incr
 
         gens.append("c2_367")
+        all_players += [dp(g, 800, 3) for g in gens]
+        gen_elo(match_info, all_players, filename)
+
+    def idk(self, filename="../data/elo/idk.elo"):
+        ' international draught killer '
+        man = manager.get_manager()
+
+        from ggpzero.battle.draughts import Draughts_MatchInfo
+        match_info = Draughts_MatchInfo(killer=True)
+
+        random_player = get_player("r", MOVE_TIME)
+        mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
+        simplemcts_player = get_player("s", MOVE_TIME, max_tree_playout_iterations=800)
+        all_players = [random_player, mcs_player, simplemcts_player]
+
+        gens = []
+        for name, num, incr in (["f1", 1, 5],):
+            while True:
+                gen = "%s_%s" % (name, num)
+                if not man.can_load("draughts_killer_10x10", gen):
+                    print "FAILED TO LOAD GEN", gen
+                    break
+
+                gens.append(gen)
+                num += incr
+
+        def dp(g, playouts, v):
+            return define_player("draughts_killer_10x10", g, playouts, v,
+                                 dirichlet_noise_pct=0.15,
+                                 depth_temperature_stop=4,
+                                 depth_temperature_start=4,
+                                 max_dump_depth=1,
+                                 random_scale=0.5)
+
         all_players += [dp(g, 800, 3) for g in gens]
         gen_elo(match_info, all_players, filename)
 

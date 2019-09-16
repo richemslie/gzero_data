@@ -278,9 +278,16 @@ class Runner(object):
         self._main(mapping, "../data/elo/baduk9_1.elo",
                    gen_modifier=gen_modifier)
 
+    def idk(self):
+        mapping = dict(
+            f1="go")
+
+        self._main(mapping, "../data/elo/idk.elo")
+
     def _main(self, *args, **kargs):
         for ii in range(self._looptimes):
             main(*args, **kargs)
+
 
 
 if __name__ == "__main__":
