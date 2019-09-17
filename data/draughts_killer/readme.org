@@ -1,0 +1,24 @@
+* Killer International Draughts
+  Day 1.
+
+  Self play is using an artificial n_rule (set to 10ply), which allows for draws in the rules
+  without repetition.  The step in n_rule is reset to 1 if (a) there is a capture, (b) a man moves.
+
+  Killer Draughts differs from vanilla Draughts, in that when a king captures, it must land on the
+  next diagonal space.  Apparently this leads to less draws in high level games.  The inputs to
+  neural network are exactly the same as vanilla International Draughts, thereby it would be easy
+  use transfer learning to train vanilla.
+
+* elo graph
+  Each model has ran a minimum of 100 games with a randomised matching algorithm continuous
+  tournament.  Each match is configured with a small amount of noise, and 800 evaluations per move.
+
+  - The y-axis is ELO.
+  - The x-axis is somewhat arbitrary in terms of compute.  Each model produced has a numeric value,
+    which goes up incrementally as training progresses.
+  - random player has a fixed ELO of 500.
+
+  <img src="elo.png" width="95%"/>
+
+
+
