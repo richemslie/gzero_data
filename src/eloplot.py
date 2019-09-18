@@ -30,7 +30,7 @@ class AllRatings(object):
 
 
 def main(genname_mapping, filename, gen_modifier=None,
-         ignore_non_models=False, check_evals=800):
+         ignore_non_models=False, check_evals=800, adjust_elo=None):
     ratings = at.json_to_attr(open(filename).read())
     genmodel_to_data = {}
 
@@ -43,6 +43,10 @@ def main(genname_mapping, filename, gen_modifier=None,
         return genmodel_to_data[name]
 
     for p in ratings.players:
+        elo = p.elo
+        if adjust_elo is not None:
+            elo += adjust_elo
+
         if "_" in p.name:
             if gen_modifier is not None:
                 gen = gen_modifier(p.name)
@@ -54,7 +58,7 @@ def main(genname_mapping, filename, gen_modifier=None,
                 if genname in p.name:
                     datapoints = get(genname)
                     datapoints[0].append(gen)
-                    datapoints[1].append(p.elo)
+                    datapoints[1].append(elo)
 
                     if check_evals is not None:
                         was_evals = str(check_evals) in p.name
@@ -72,16 +76,16 @@ def main(genname_mapping, filename, gen_modifier=None,
                 txt += "  %s" % p.played
 
             if txt:
-                plt.text(gen, p.elo, txt)
+                plt.text(gen, elo, txt)
 
         else:
             if not ignore_non_models:
-                plt.plot(-10, [p.elo], "bx")
+                plt.plot(-10, [elo], "bx")
                 txt = "  " + p.name
                 if p.played < Runner._elo_min:
                     txt += "  %s" % p.played
 
-                plt.text(-10, p.elo, txt)
+                plt.text(-10, elo, txt)
 
     for name, color in genname_mapping.items():
         datapoints = get(name)
@@ -282,7 +286,7 @@ class Runner(object):
         mapping = dict(
             f1="go")
 
-        self._main(mapping, "../data/elo/idk.elo")
+        self._main(mapping, "../data/elo/idk.elo", ignore_non_models=False, adjust_elo=None)
 
     def _main(self, *args, **kargs):
         for ii in range(self._looptimes):

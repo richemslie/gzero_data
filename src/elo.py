@@ -942,9 +942,10 @@ class Runner(object):
         def dp(g, playouts, v):
             return define_player("draughts_killer_10x10", g, playouts, v,
                                  dirichlet_noise_pct=0.15,
-                                 depth_temperature_stop=4,
-                                 depth_temperature_start=4,
+                                 depth_temperature_stop=6,
+                                 depth_temperature_start=6,
                                  max_dump_depth=1,
+                                 temperature=1.0,
                                  random_scale=0.5)
 
         all_players += [dp(g, 800, 3) for g in gens]
