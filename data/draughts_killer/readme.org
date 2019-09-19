@@ -1,5 +1,5 @@
 * Killer International Draughts
-  Day 2.
+  Day 3.
 
   Self play is using an artificial n_rule (set to 10-ply), which allows for draws in the rules
   without repetition.  The step in n_rule is reset to 1 if (a) there is a capture, (b) a man moves.
