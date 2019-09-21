@@ -1,3 +1,4 @@
 # temporary/backup files
 *~
 *.log
+*.pyc

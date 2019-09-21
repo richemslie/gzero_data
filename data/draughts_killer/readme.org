@@ -1,5 +1,4 @@
 * Killer International Draughts
-  Day 3.
 
   Self play is using an artificial n_rule (set to 10-ply), which allows for draws in the rules
   without repetition.  The step in n_rule is reset to 1 if (a) there is a capture, (b) a man moves.
@@ -8,6 +7,17 @@
   square after the last captured piece, if and only if that piece is also a king.  The idea is this
   leads to less draws in high level games.  The inputs to neural network are exactly the same as
   vanilla International Draughts, thereby it would be easy use transfer learning to train vanilla.
+
+** [[https://github.com/richemslie/gzero_data/blob/3955b3e7222c7b99080659008c7a4a4ab150a588/data/draughts_killer/readme.org][day 1]]
+
+** [[https://github.com/richemslie/gzero_data/blob/b2fd3a0055f048b0cfe877c58f90a0056773c479/data/draughts_killer/readme.org][day 2]]
+
+** [[https://github.com/richemslie/gzero_data/blob/479a82da6b7daf3b4fa8691edda479316c3128c8/data/draughts_killer/readme.org][day 3]]
+
+** status - day 5
+   Network still small (96x5).  The elo graph has plateaued, however I am continuing with
+   the small network using more evaluations per board position (currently 600).
+
 
 * elo graph
   Each model has ran a minimum of 100 games with a randomised matching algorithm continuous
