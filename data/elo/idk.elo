@@ -5,376 +5,418 @@
         ],
         "players": [
             {
-                "elo": 3525.621796973143,
+                "elo": 3614.0406673898005,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_291",
-                "played": 33
+                "name": "draughts_killer_10x10_v3_800_f1_326",
+                "played": 71
             },
             {
-                "elo": 3513.6553578726334,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_236",
-                "played": 158
-            },
-            {
-                "elo": 3512.9490599784704,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_271",
-                "played": 109
-            },
-            {
-                "elo": 3504.86248861069,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_281",
-                "played": 103
-            },
-            {
-                "elo": 3503.2689485401297,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_241",
-                "played": 137
-            },
-            {
-                "elo": 3411.0566758938903,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_251",
-                "played": 116
-            },
-            {
-                "elo": 3394.813806047025,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_266",
-                "played": 114
-            },
-            {
-                "elo": 3363.818203591345,
+                "elo": 3548.2639602755767,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_286",
-                "played": 100
-            },
-            {
-                "elo": 3351.592462759697,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_276",
-                "played": 102
-            },
-            {
-                "elo": 3338.6156659618955,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_256",
-                "played": 106
-            },
-            {
-                "elo": 3334.17294311711,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_261",
-                "played": 108
-            },
-            {
-                "elo": 3329.367842676435,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_246",
-                "played": 126
-            },
-            {
-                "elo": 3303.5823322736333,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_221",
-                "played": 118
-            },
-            {
-                "elo": 3299.409578468256,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_206",
-                "played": 172
-            },
-            {
-                "elo": 3283.6799224075644,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_211",
-                "played": 144
-            },
-            {
-                "elo": 3270.2207908074406,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_231",
-                "played": 133
-            },
-            {
-                "elo": 3269.920541258765,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_216",
                 "played": 142
             },
             {
-                "elo": 3264.4956573869654,
+                "elo": 3531.0934741162746,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_191",
-                "played": 111
+                "name": "draughts_killer_10x10_v3_800_f1_316",
+                "played": 102
             },
             {
-                "elo": 3263.713985247736,
+                "elo": 3526.304976938764,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_201",
-                "played": 153
+                "name": "draughts_killer_10x10_v3_800_f1_301",
+                "played": 118
             },
             {
-                "elo": 3245.9291063406677,
+                "elo": 3500.767019460736,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_186",
-                "played": 110
+                "name": "draughts_killer_10x10_v3_800_f1_241",
+                "played": 185
             },
             {
-                "elo": 3245.5253897783755,
+                "elo": 3465.9085547337295,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_226",
-                "played": 136
+                "name": "draughts_killer_10x10_v3_800_f1_271",
+                "played": 148
             },
             {
-                "elo": 3242.8748886954113,
+                "elo": 3458.242700063214,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_166",
-                "played": 170
+                "name": "draughts_killer_10x10_v3_800_f1_321",
+                "played": 103
             },
             {
-                "elo": 3215.5516048650657,
+                "elo": 3452.36286620068,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_181",
-                "played": 167
+                "name": "draughts_killer_10x10_v3_800_f1_311",
+                "played": 102
             },
             {
-                "elo": 3207.96066179521,
+                "elo": 3426.6775814201173,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_161",
-                "played": 174
+                "name": "draughts_killer_10x10_v3_800_f1_306",
+                "played": 102
             },
             {
-                "elo": 3203.739875452485,
+                "elo": 3420.6888248231285,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_176",
-                "played": 146
+                "name": "draughts_killer_10x10_v3_800_f1_236",
+                "played": 199
             },
             {
-                "elo": 3193.768067851768,
+                "elo": 3408.1745092843476,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_141",
-                "played": 179
-            },
-            {
-                "elo": 3159.0008055534686,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_196",
-                "played": 117
-            },
-            {
-                "elo": 3147.0861943196633,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_171",
-                "played": 158
-            },
-            {
-                "elo": 3089.3243531361295,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_136",
-                "played": 162
-            },
-            {
-                "elo": 3077.9555757025223,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_156",
+                "name": "draughts_killer_10x10_v3_800_f1_281",
                 "played": 134
             },
             {
-                "elo": 3066.2802416992895,
+                "elo": 3401.4320158156543,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_146",
+                "name": "draughts_killer_10x10_v3_800_f1_266",
                 "played": 136
             },
             {
-                "elo": 3035.8230697998024,
+                "elo": 3388.929568791685,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_126",
-                "played": 178
+                "name": "draughts_killer_10x10_v3_800_f1_261",
+                "played": 134
             },
             {
-                "elo": 3033.4076628767552,
+                "elo": 3385.302461707539,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_151",
-                "played": 143
+                "name": "draughts_killer_10x10_v3_800_f1_291",
+                "played": 114
             },
             {
-                "elo": 3018.073746666816,
+                "elo": 3360.50092531734,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_131",
+                "name": "draughts_killer_10x10_v3_800_f1_251",
+                "played": 137
+            },
+            {
+                "elo": 3359.8303048702633,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_256",
+                "played": 135
+            },
+            {
+                "elo": 3347.1964051776754,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_246",
+                "played": 146
+            },
+            {
+                "elo": 3323.159593014467,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_276",
+                "played": 115
+            },
+            {
+                "elo": 3310.5350755434692,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_231",
+                "played": 139
+            },
+            {
+                "elo": 3299.726805315154,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_296",
+                "played": 103
+            },
+            {
+                "elo": 3276.2724696128585,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_226",
+                "played": 144
+            },
+            {
+                "elo": 3272.456954959246,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_211",
                 "played": 156
             },
             {
-                "elo": 2981.8762576379627,
+                "elo": 3253.371526580489,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_121",
-                "played": 125
+                "name": "draughts_killer_10x10_v3_800_f1_221",
+                "played": 127
             },
             {
-                "elo": 2933.9726662672206,
+                "elo": 3245.704735522242,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_111",
-                "played": 113
+                "name": "draughts_killer_10x10_v3_800_f1_166",
+                "played": 176
             },
             {
-                "elo": 2929.6474515565646,
+                "elo": 3241.500142141242,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_101",
+                "name": "draughts_killer_10x10_v3_800_f1_216",
+                "played": 153
+            },
+            {
+                "elo": 3236.557906426427,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_186",
+                "played": 115
+            },
+            {
+                "elo": 3232.279218855562,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_191",
+                "played": 116
+            },
+            {
+                "elo": 3229.8416155762648,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_201",
+                "played": 163
+            },
+            {
+                "elo": 3215.2947691932654,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_206",
                 "played": 185
             },
             {
-                "elo": 2907.377056518947,
+                "elo": 3195.342926589607,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_96",
-                "played": 160
+                "name": "draughts_killer_10x10_v3_800_f1_176",
+                "played": 152
             },
             {
-                "elo": 2887.576370090404,
+                "elo": 3188.624376096725,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_106",
-                "played": 161
-            },
-            {
-                "elo": 2878.7262099097843,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_91",
+                "name": "draughts_killer_10x10_v3_800_f1_196",
                 "played": 121
             },
             {
-                "elo": 2856.6497582859965,
+                "elo": 3187.0626193914463,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_161",
+                "played": 179
+            },
+            {
+                "elo": 3177.090669575487,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_181",
+                "played": 175
+            },
+            {
+                "elo": 3176.3885783754145,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_141",
+                "played": 192
+            },
+            {
+                "elo": 3118.471993161697,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_171",
+                "played": 164
+            },
+            {
+                "elo": 3103.724277670207,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_136",
+                "played": 166
+            },
+            {
+                "elo": 3063.488794476868,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_156",
+                "played": 142
+            },
+            {
+                "elo": 3039.6094902264413,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_146",
+                "played": 146
+            },
+            {
+                "elo": 3024.8516342431813,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_126",
+                "played": 181
+            },
+            {
+                "elo": 3015.526578928205,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_131",
+                "played": 160
+            },
+            {
+                "elo": 3007.0652588848147,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_151",
+                "played": 148
+            },
+            {
+                "elo": 2971.1408778448213,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_121",
+                "played": 128
+            },
+            {
+                "elo": 2925.6508185215816,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_101",
+                "played": 186
+            },
+            {
+                "elo": 2922.9055983984163,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_111",
+                "played": 116
+            },
+            {
+                "elo": 2901.6164707891267,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_96",
+                "played": 162
+            },
+            {
+                "elo": 2879.1895097028573,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_76",
-                "played": 172
+                "played": 176
             },
             {
-                "elo": 2833.7345921578367,
+                "elo": 2874.383747580764,
                 "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_116",
-                "played": 100
+                "name": "draughts_killer_10x10_v3_800_f1_91",
+                "played": 123
             },
             {
-                "elo": 2802.660506089805,
+                "elo": 2872.554183879007,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_106",
+                "played": 165
+            },
+            {
+                "elo": 2834.165092585428,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_81",
-                "played": 168
+                "played": 171
             },
             {
-                "elo": 2793.8657622472588,
+                "elo": 2815.075084145842,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_116",
+                "played": 106
+            },
+            {
+                "elo": 2793.353812942066,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_86",
-                "played": 108
+                "played": 110
             },
             {
-                "elo": 2720.606100550679,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_61",
-                "played": 153
-            },
-            {
-                "elo": 2718.772321404255,
-                "fixed": false,
-                "name": "draughts_killer_10x10_v3_800_f1_71",
-                "played": 182
-            },
-            {
-                "elo": 2708.8077646153984,
+                "elo": 2761.349694898191,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_56",
-                "played": 185
+                "played": 189
             },
             {
-                "elo": 2608.626634713536,
+                "elo": 2717.215071323728,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_71",
+                "played": 187
+            },
+            {
+                "elo": 2706.5695256752833,
+                "fixed": false,
+                "name": "draughts_killer_10x10_v3_800_f1_61",
+                "played": 155
+            },
+            {
+                "elo": 2598.7769112448455,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_66",
-                "played": 101
+                "played": 105
             },
             {
-                "elo": 2541.2669428949007,
+                "elo": 2541.02587890058,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_51",
-                "played": 122
+                "played": 124
             },
             {
-                "elo": 2535.935838086969,
+                "elo": 2529.4494416120756,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_41",
-                "played": 205
+                "played": 209
             },
             {
-                "elo": 2475.960299845958,
+                "elo": 2495.796273793075,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_36",
-                "played": 188
+                "played": 191
             },
             {
-                "elo": 2470.8384677972585,
+                "elo": 2458.598270181793,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_46",
-                "played": 168
+                "played": 171
             },
             {
-                "elo": 2342.041264962625,
+                "elo": 2333.424224964386,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_31",
-                "played": 151
+                "played": 159
             },
             {
-                "elo": 2281.0741640895412,
+                "elo": 2275.098731967773,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_26",
-                "played": 170
+                "played": 175
             },
             {
-                "elo": 2265.381308024988,
+                "elo": 2264.1076993590164,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_21",
-                "played": 223
+                "played": 225
             },
             {
-                "elo": 2216.5275155553086,
+                "elo": 2258.403271495642,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_16",
-                "played": 227
+                "played": 229
             },
             {
-                "elo": 1962.7507730031234,
+                "elo": 1959.759071789033,
                 "fixed": false,
                 "name": "simplemcts",
-                "played": 188
+                "played": 191
             },
             {
-                "elo": 1929.5631715901743,
+                "elo": 1923.0858474072984,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_11",
-                "played": 153
+                "played": 158
             },
             {
-                "elo": 1612.8928907250347,
+                "elo": 1610.8181582622603,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_6",
-                "played": 147
+                "played": 150
             },
             {
-                "elo": 1257.534678741125,
+                "elo": 1257.4377977467816,
                 "fixed": false,
                 "name": "pymcs",
-                "played": 126
+                "played": 127
             },
             {
-                "elo": 1197.3537964459626,
+                "elo": 1197.3537622781867,
                 "fixed": false,
                 "name": "draughts_killer_10x10_v3_800_f1_1",
-                "played": 122
+                "played": 123
             },
             {
                 "elo": 500.0,
                 "fixed": true,
                 "name": "random",
-                "played": 121
+                "played": 123
             }
         ],
         "players__clzlist__": [

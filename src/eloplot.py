@@ -1,5 +1,3 @@
-import sys
-import random
 from collections import OrderedDict
 
 import matplotlib.pyplot as plt

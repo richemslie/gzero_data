@@ -26,6 +26,14 @@ INITIAL_K = 100.0
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
 
 
+def check_lg():
+    try:
+        import check_lg
+        return check_lg.check_lg()
+    except ImportError:
+        return False
+
+
 def probability(rating1, rating2):
     return 1.0 * 1.0 / (1 + 1.0 * math.pow(10, 1.0 * (rating1 - rating2) / 400))
 
@@ -233,7 +241,10 @@ def gen_elo(match_info, all_players, filename, move_generator=None, verbose=Fals
         ratings = at.json_to_attr(open(filename).read())
     else:
         ratings = AllRatings(match_info.name)
-        ratings.players.append(PlayerRating("random", fixed=True, elo=500.0))
+
+        # only add random if in all_players
+        if "random" in all_players:
+            ratings.players.append(PlayerRating("random", fixed=True, elo=500.0))
 
     # add in all the players
 
@@ -373,6 +384,10 @@ def gen_elo(match_info, all_players, filename, move_generator=None, verbose=Fals
                                                player0_wins)
 
         elo_dump_and_save(filename, ratings)
+
+        # check if there are any LG games waiting, and finish up if so
+        if check_lg():
+            break
 
 
 ###############################################################################
