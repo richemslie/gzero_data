@@ -16,11 +16,11 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 30
+NUM_GAMES = 50
 MOVE_TIME = 30.0
 RESIGN_PCT = -1
-STARTING_ELO = 1500.0
-MAX_ADD_COUNT = 200
+STARTING_ELO = 2500.0
+MAX_ADD_COUNT = 2
 INITIAL_K = 100.0
 
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
