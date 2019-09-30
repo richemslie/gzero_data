@@ -1,0 +1,51 @@
+* Breakthrough
+
+  Models here:
+
+  - kt1_206 - experimental best model
+  - x6_164 - ICGA model
+  - x6_111
+  - x6_102
+
+  The following models were ran on Little Golem:
+
+  All games before and include game #1929586 - x6_102
+  To  #1929586 - x6_111
+  All games after #1959831 - x6_164
+
+  Trained at approx ggp-zero commit [[https://github.com/ggplib/ggp-zero/commit/55663753ed479d449af80b1a7b93525bca5c9430][5566375]]
+
+  Special thanks to Richard Lorentz & Fabien Letouzey for entertaining mini competitions to evaluate the strength of
+  models/bot on LG.
+
+
+* elo graph
+  Each model has ran a minimum of 100 games with a randomised matching algorithm continuous
+  tournament.  Each match is configured with a small amount of noise, and 800 evaluations per move.
+
+  - The y-axis is ELO.
+  - The x-axis is somewhat arbitrary in terms of compute.  Each model produced has a numeric value, which goes up incrementally as training progresses.
+  - The crosses are fixed players (ie no generation).   random player has a fixed ELO of 500.
+
+  X6 - run was performed in early 2018, and was expert iteration.
+
+  kt - runs are all full matches, no expert iteration.
+
+  kt1 - was hand tweaked config, with continuously upping the size of the network
+
+  kt3/az1 - ran with largely fixed, same config of ~200 evals per move (XXX need to check).  kt3
+  used oscillating move generation (taking 20% of moves) - whereas az1 is full matches (ie
+  AlphaZero method, taking 100% of moves).  network was enlarged during run.  Suprising similar
+  results, need to double check.
+
+  kt5 - configured with a very small network, and ran with maximum number evals so could continuously
+  train, and just left to run unattended for for 3 days (with 3 gpus).
+
+  f1 - another longer run with small network.
+
+  *Conclusion: quantity of data triumphs quality - as long train early & train often*
+
+  [[file:elo.png][elo png]]
+
+
+
