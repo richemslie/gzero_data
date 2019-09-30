@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/07/07 04:56",
+        "draw_head": true,
+        "game": "reversi",
+        "multiple_policy_heads": true,
+        "name": "f2_308",
+        "num_previous_states": 1,
+        "trained_losses": "value_loss = 0.1393, policy_1_loss = 0.7022, loss = 1.5912, policy_0_loss = 0.7261",
+        "trained_policy_accuracy": "combined policy accuracy 0.6184/0.6254",
+        "trained_validation_losses": "val_value_loss = 0.1408, val_policy_1_loss = 0.6920, val_policy_0_loss = 0.7186, val_loss = 1.5750",
+        "trained_value_accuracy": "score accuracy 0.6787 / 0.6713",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
