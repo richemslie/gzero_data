@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/08/13 18:25",
+        "draw_head": false,
+        "game": "breakthroughSmall",
+        "multiple_policy_heads": true,
+        "name": "b1_58",
+        "num_previous_states": 1,
+        "trained_losses": "value_loss = 0.0513, policy_1_loss = 1.0660, loss = 1.8056, policy_0_loss = 0.7177",
+        "trained_policy_accuracy": "combined policy accuracy 0.6036/0.6335",
+        "trained_validation_losses": "val_value_loss = 0.0588, val_policy_1_loss = 1.0170, val_policy_0_loss = 0.6771, val_loss = 1.7179",
+        "trained_value_accuracy": "score accuracy 0.9310 / 0.9246",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
