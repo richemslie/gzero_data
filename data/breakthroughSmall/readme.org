@@ -17,7 +17,7 @@
     value, which goes up incrementally as training progresses.
   - random player has a fixed ELO of 500.
 
-  [[file:elo.png][elo png]]
+  [[elo.png]]
 
 
 

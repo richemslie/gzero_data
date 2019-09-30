@@ -45,7 +45,7 @@
 
   *Conclusion: quantity of data triumphs quality - as long train early & train often*
 
-  [[file:elo.png][elo png]]
+  [[elo.png]]
 
 
 
