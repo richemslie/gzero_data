@@ -1,8 +1,13 @@
-* chess
+* Connect 6
 
-  - kb1 was trained with self play and historical data (concurrently 1-1 ratio).
-  - c1/c2 was trained via self play only.
-  - c2 forked from c1, slightly larger network.  Switched to using 3 value heads (black/white/draw) with cross entropy.
+  Models here:
+
+  - h1 - first attempt at training
+  - h2 - forked h1, rebuilt database with symmetries
+
+  After approx gen h1_150, I added in all games from LG as historical data.  It didn't make any
+  difference to elo, as can see with approx gen h1_185.
+
 * elo graph
 
   Each model has ran a minimum of 100 games with a randomised matching algorithm continuous
@@ -10,11 +15,9 @@
 
   - The y-axis is ELO.
   - The x-axis is somewhat arbitrary in terms of compute.  Each model produced has a numeric value, which goes up incrementally as training progresses.
-  - random player has a fixed ELO of -250.
-  - c2 is moved 200 generations to the right
+  - random player has a fixed ELO of 500.
 
   [[elo.png]]
-
 
 
 
