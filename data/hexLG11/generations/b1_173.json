@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/08/12 22:03",
+        "draw_head": false,
+        "game": "hexLG11",
+        "multiple_policy_heads": true,
+        "name": "b1_173",
+        "num_previous_states": 1,
+        "trained_losses": "value_loss = 0.1137, policy_1_loss = 1.0501, loss = 2.1480, policy_0_loss = 1.0639",
+        "trained_policy_accuracy": "combined policy accuracy 0.6404/0.6478",
+        "trained_validation_losses": "val_value_loss = 0.1264, val_policy_1_loss = 1.0190, val_policy_0_loss = 1.0472, val_loss = 2.1036",
+        "trained_value_accuracy": "score accuracy 0.8276 / 0.8054",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
