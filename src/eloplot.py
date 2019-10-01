@@ -133,11 +133,11 @@ class Runner(object):
         def gen_modifier(name):
             gen = int(name.split('_')[-1])
 
-            if "d1x" in name:
-                gen += 250
-
-            elif "c2_" in name:
+            if "c2_" in name:
                 gen += 275
+
+            elif "d2" in name:
+                gen += 450
 
             elif "b2" in name:
                 gen += 350
@@ -146,49 +146,24 @@ class Runner(object):
                 gen += 710 - 40
 
             elif "b4" in name:
-                gen += 200
+                gen += 400
 
-            elif "d2_" in name:
-                gen += 450
-
-            else:
-                for prefix in ("h4", "h5", "h6"):
-                    if prefix in name:
-                        gen += 100
-                        break
 
             return gen
 
-        minimal = False
-        if minimal:
-            mapping = dict(
-                b2="go",
-                c2="co",
-                d1x="mx",
-                d2="c^")
+        mapping = dict(
+            b1="b^",
+            b2="r^",
+            b3="c^",
+            b4="g^",
+            c1="ro",
+            h1="go",
+            best="yx",
+            h2="yo",
+            c2="bo",
+            d2="co")
 
-            self._main(mapping, "../data/elo/hex13.elo",
-                       gen_modifier=gen_modifier, ignore_non_models=True)
-
-        else:
-            mapping = dict(
-                b1="b^",
-                b2="r^",
-                b3="c^",
-                b4="g^",
-                c1="ro",
-                h1="go",
-                best="yx",
-                h2="yo",
-                h4="gx",
-                h5="yx",
-                h6="yx",
-                c2="bo",
-                d1_="mo",
-                d1x="mx",
-                d2="co")
-
-            self._main(mapping, "../data/elo/hex13.elo", gen_modifier=gen_modifier)
+        self._main(mapping, "../data/elo/hex13.elo", gen_modifier=gen_modifier)
 
     def hex11(self):
         mapping = dict(

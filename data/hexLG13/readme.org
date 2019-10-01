@@ -1,0 +1,28 @@
+* Hex 13
+
+  Models here:
+
+  - h1 : first attempt at training - ended @ 229 July, for first bot competition on LG
+  - h2_320 : model used in most games in LG Championship Dec '18
+
+  - c1 : was started from h1/h2
+  - c2 : was forked and started over from c1.  Artificially moved to right 275.
+  - d2 : was forked and started over from c1/c2.  Artificially moved to right 450.
+
+  - d2_194 (d2_644 on graph) was model used in LG Championship May '19.
+
+  - b1/b2/b3 - fresh model from absoulte zero.  got to the same as d2.
+  - b4 - combined d2/b3 and used a slightly bigger model.
+
+* elo graph
+
+  Each model has ran a minimum of 100 games with a randomised matching algorithm continuous
+  tournament.  Each match is configured with a small amount of noise, and 800 evaluations per move.
+
+  - The y-axis is ELO.
+  - The x-axis is somewhat arbitrary in terms of compute.  Each model produced has a numeric value, which goes up incrementally as training progresses.
+  - random player has a fixed ELO of 500.
+
+  [[elo.png]]
+
+
