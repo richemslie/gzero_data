@@ -16,7 +16,7 @@ from ggpzero.nn import manager
 from ggpzero.battle.common import get_player, run, MatchTooLong
 
 
-NUM_GAMES = 50
+NUM_GAMES = 20
 MOVE_TIME = 30.0
 RESIGN_PCT = -1
 STARTING_ELO = 2500.0
@@ -323,8 +323,9 @@ def gen_elo(match_info, all_players, filename, move_generator=None, verbose=Fals
                 # fake a win for player with lower elo
                 player0_wins = player0.rating.elo < player1.rating.elo
 
-            res_str = "%s: %s (%.1f) / %s (%.1f) " % (res_str, player0.get_name(), player0.rating.elo,
-                                                      player1.get_name(), player1.rating.elo)
+            res_str = "%s: %s (%.1f) / %s (%.1f) " % (res_str, player0.get_name(),
+                                                      player0.rating.elo, player1.get_name(),
+                                                      player1.rating.elo)
             print res_str
             ratings.log.append(res_str)
 
@@ -503,8 +504,9 @@ class Runner(object):
 
         match_info = hex.MatchInfo(13)
 
-        # h1_229 was best from pre-july.  h1_50 was from 3rd June. h1_175 was from 21st june.
-        # best_252 was 27th of August, I think some bigger model and includes historical data.
+        # h1_229 was best from pre-july.  h1_50 was from 3rd June. h1_175 was from 21st
+        # june. best_252 was 27th of August, I think some bigger model and includes historical
+        # data.
 
         # abandoned lines
         # h1_289 - oct 4
@@ -542,8 +544,8 @@ class Runner(object):
 
         others = ["c2_201", "c2_203", "c2_205", "c2_208", "c2_209", "c2_212", "c2_216", "c2_221",
                   "c2_222", "c2_226", "c2_227", "c2_228", "c2_229", "c2_230", "c2_231", "c2_235",
-                  "c2_239", "c2_242", "c2_248", "c2_250", "c2_275", "c2_277",
-                  "d2_110", "d2_112", "d2_139"]
+                  "c2_239", "c2_242", "c2_248", "c2_250", "c2_275", "c2_277", "d2_110", "d2_112",
+                  "d2_139"]
 
         recent = ["b4_256", "b4_260", "b4_264", "b4_265", "b4_275", "b4_277"]
 
@@ -584,9 +586,9 @@ class Runner(object):
                                  fpu_prior_discount_root=0.15)
 
         all_players = [dp("h1_0", 42, 2)]
-        gens = ("t1_420_orig", "h1_50", "h1_75", "h1_100", "h1_126", "h1_200", "h1_283",
-                "t1_150", "t1_174", "t1_250", "t1_300", "t1_350", "t1_400", "t1_419",
-                "c1_251", "c1_252", "c1_253", "c1_254", "c1_257", "c1_270", "c1_276", "c1_277")
+        gens = ("t1_420_orig", "h1_50", "h1_75", "h1_100", "h1_126", "h1_200", "h1_283", "t1_150",
+                "t1_174", "t1_250", "t1_300", "t1_350", "t1_400", "t1_419", "c1_251", "c1_252",
+                "c1_253", "c1_254", "c1_257", "c1_270", "c1_276", "c1_277")
 
         all_players += [dp(g, 800, 3) for g in gens]
         gen_elo(match_info, all_players, filename,
@@ -638,21 +640,9 @@ class Runner(object):
 
 
         # 3 models ran on LG
-        all_players = [dp(g, 800, 3) for g in ("x6_90",
-                                               "x6_96",
-                                               "x6_102",
-                                               "x6_106",
-                                               "x6_111",
-                                               "x6_116",
-                                               "x6_123",
-                                               "x6_127",
-                                               "x6_132",
-                                               "x6_139",
-                                               "x6_145",
-                                               "x6_151",
-                                               "x6_158",
-                                               "x6_163",
-                                               "x6_171",
+        all_players = [dp(g, 800, 3) for g in ("x6_90", "x6_96", "x6_102", "x6_106", "x6_111",
+                                               "x6_116", "x6_123", "x6_127", "x6_132", "x6_139",
+                                               "x6_145", "x6_151", "x6_158", "x6_163", "x6_171",
                                                "x6_177")]
 
         kt_gens = ["kt1_1",
