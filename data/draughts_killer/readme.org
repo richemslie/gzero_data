@@ -18,11 +18,42 @@
    Upped to 20-ply for n-rule.
 
 ** [[https://github.com/richemslie/gzero_data/tree/491f48bff766d16dbe2ae175f955cae4c243f639/data/draughts_killer][day 5]]
-   Network still small (96x5).  The elo graph has plateaued, however I am continuing with
+   Network still small (96x5).  The ELO graph has plateaued, however I am continuing with
    the small network using more evaluations per board position (currently 600).
 ** day 14
    Big gap.  Upped the size of the network on day 7, at gen 349.
    Progress slow, and quite erratic.
+
+
+** 5 weeks later
+   Very boring, no real progress at all.  Stopped training.
+
+** testing
+   I played 3 games by hand against Scan on some website.  I used the maximum strength Scan allows
+   for the site, which only uses 1 second search according to author.  2 games I had gzero search
+   for 5 seconds and it made horrendous blunders early game, and resigned immediately (at least it
+   knew it blundered!).  There wasn't enough time for MCTS to converge on the losing move, and the
+   policy move had a non-existent probability.
+
+   The 3rd game I tried with 1 minute search to test if the blunders early game could be overcome.
+   That game ended in a draw, and gzero thought it had won since I played with killer mode.  Which
+   comes down to my lack of understanding of the game.  But a draw was a good result, all things
+   considered.
+
+   Unfortunately it took several hours to test a game by hand, and didn't have time for more games.
+
+   It is possible to play against gzero on littlegolem, should anyone be remotely interested.
+   However, it will be playing rather slowly, as the GPU is shared among many tasks.
+
+** future:
+   There is a small chance I'll try again in 2020, but using a more specialised approach and
+   combining some search ideas to vastly speed up search.  As the best result I can get against
+   Scan is a draw apparently, it seems like diminishing returns as to what can be achieved.
+
+   There is no doubt given a much larger network and training with several orders of magnitude more
+   self play games, the model would become much stronger.  Unfortunately that is outside the realm
+   of possibilities for me, and I am interested in a 'less is more' philosophy to NN training.
+
 
 * elo graph
   Each model has ran a minimum of 100 games with a randomised matching algorithm continuous
@@ -31,7 +62,8 @@
   - The y-axis is ELO.
   - The x-axis is somewhat arbitrary in terms of compute.  Each model produced has a numeric value,
     which goes up incrementally as training progresses.
-  - random player has a fixed ELO of 500.
+  - random player has a fixed ELO of 500 (and random might be more like -1500 ELO, hence the
+    inflated values)
 
   [[elo.png]]
 
