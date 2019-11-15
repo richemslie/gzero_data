@@ -19,14 +19,17 @@ from ggpzero.battle.common import get_player, run, MatchTooLong
 NUM_GAMES = 20
 MOVE_TIME = 30.0
 RESIGN_PCT = -1
-STARTING_ELO = 2500.0
+STARTING_ELO = 1500.0
 MAX_ADD_COUNT = 2
 INITIAL_K = 100.0
 
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
+CHECK_LG = True
 
 
 def check_lg():
+    if not CHECK_LG:
+        return False
     try:
         import check_lg
         return check_lg.check_lg()
@@ -773,6 +776,9 @@ class Runner(object):
                 gens.append(gen)
                 num += incr
 
+        # 80 - all, 90 global
+        gens += ["b1_80", "b1_90"]
+
         all_players = [dp(g, 800, 3) for g in gens]
 
         random_player = get_player("r", MOVE_TIME)
@@ -933,6 +939,8 @@ class Runner(object):
         gens = []
         for name, num, incr in (["f1", 1, 5],):
             while True:
+                if num > 700:
+                    break
                 gen = "%s_%s" % (name, num)
                 if not man.can_load("draughts_killer_10x10", gen):
                     print "FAILED TO LOAD GEN", gen
@@ -941,6 +949,8 @@ class Runner(object):
                 gens.append(gen)
                 num += incr
 
+        gens.append("f1_816")
+        gens.append("f1_849")
         def dp(g, playouts, v):
             return define_player("draughts_killer_10x10", g, playouts, v,
                                  dirichlet_noise_pct=0.15,
@@ -950,6 +960,52 @@ class Runner(object):
                                  temperature=1.0,
                                  random_scale=0.5)
 
+        all_players += [dp(g, 800, 3) for g in gens]
+        gen_elo(match_info, all_players, filename)
+
+
+    def hex19(self, filename="../data/elo/hex19.elo"):
+        ' hex19 - with new hex C++ SM '
+        from ggpzero.battle import hex2
+
+        man = manager.get_manager()
+
+        match_info = hex2.MatchInfo(19)
+
+        random_player = get_player("r", MOVE_TIME)
+
+        # 1 second
+        simplemcts_player = get_player("s", 1.0)
+        all_players = [random_player, simplemcts_player]
+
+        gens = []
+        for name, num, incr, maxg in (["h1", 258, 7, 360],
+                                      ["h1", 361, 10, 489],
+                                      ["h1", 496, 6, 700],
+                                      ["t1", 5, 5, 100]):
+            while True:
+                gen = "%s_%s" % (name, num)
+                if not man.can_load("hex_lg_19", gen):
+                    print "FAILED TO LOAD GEN", gen
+                    break
+
+                gens.append(gen)
+                num += incr
+                if num > maxg:
+                    break
+
+        def dp(g, playouts, v):
+            return define_player("hex_lg_19", g, playouts, v,
+                                 dirichlet_noise_pct=0.15,
+                                 depth_temperature_increment=1.0,
+                                 depth_temperature_max=10.0,
+                                 depth_temperature_stop=8,
+                                 depth_temperature_start=1,
+                                 max_dump_depth=1,
+                                 temperature=1.0,
+                                 random_scale=0.8)
+
+        gens += ["lalal_456", "lalal_490", "lalal_603"]
         all_players += [dp(g, 800, 3) for g in gens]
         gen_elo(match_info, all_players, filename)
 

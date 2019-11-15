@@ -261,6 +261,23 @@ class Runner(object):
 
         self._main(mapping, "../data/elo/idk.elo", ignore_non_models=False, adjust_elo=None)
 
+    def hex19(self):
+        mapping = dict(
+            h1="go",
+            t1="co",
+            lalal="bo")
+
+        def gen_modifier(name):
+            gen = int(name.split('_')[-1])
+
+            if "h1_" in name or "lalal_" in name:
+               gen -= 250
+
+            return gen
+
+        self._main(mapping, "../data/elo/hex19.elo",
+                   gen_modifier=gen_modifier)
+
     def _main(self, *args, **kargs):
         for ii in range(self._looptimes):
             main(*args, **kargs)

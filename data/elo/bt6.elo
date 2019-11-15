@@ -5,148 +5,160 @@
         ],
         "players": [
             {
-                "elo": 2453.1996683662687,
-                "fixed": false,
-                "name": "bt6_v3_800_b1_53",
-                "played": 110
-            },
-            {
-                "elo": 2419.277215741179,
+                "elo": 2499.3073824416188,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_58",
+                "played": 105
+            },
+            {
+                "elo": 2471.1977521387007,
+                "fixed": false,
+                "name": "bt6_v3_800_b1_53",
+                "played": 116
+            },
+            {
+                "elo": 2339.8790514130287,
+                "fixed": false,
+                "name": "bt6_v3_800_b1_48",
+                "played": 126
+            },
+            {
+                "elo": 2321.785902632249,
+                "fixed": false,
+                "name": "bt6_v3_800_x1_109",
+                "played": 167
+            },
+            {
+                "elo": 2320.112932970881,
+                "fixed": false,
+                "name": "bt6_v3_800_x1_117",
+                "played": 170
+            },
+            {
+                "elo": 2277.397045593124,
+                "fixed": false,
+                "name": "bt6_v3_800_x1_125",
+                "played": 174
+            },
+            {
+                "elo": 2223.9755750209583,
+                "fixed": false,
+                "name": "bt6_v3_800_b1_80",
                 "played": 100
             },
             {
-                "elo": 2395.9982584972013,
-                "fixed": false,
-                "name": "bt6_v3_800_x1_125",
-                "played": 160
-            },
-            {
-                "elo": 2368.4128832639344,
-                "fixed": false,
-                "name": "bt6_v3_800_x1_117",
-                "played": 153
-            },
-            {
-                "elo": 2317.4202594157327,
-                "fixed": false,
-                "name": "bt6_v3_800_x1_109",
-                "played": 157
-            },
-            {
-                "elo": 2314.8058841199068,
-                "fixed": false,
-                "name": "bt6_v3_800_b1_48",
-                "played": 112
-            },
-            {
-                "elo": 2294.9759054335855,
+                "elo": 2220.339591227425,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_101",
-                "played": 140
+                "played": 149
             },
             {
-                "elo": 2265.4153948495505,
-                "fixed": false,
-                "name": "bt6_v3_800_b1_33",
-                "played": 131
-            },
-            {
-                "elo": 2147.1399383244266,
+                "elo": 2185.8888827344545,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_43",
-                "played": 117
+                "played": 121
             },
             {
-                "elo": 2099.0554116173685,
+                "elo": 2175.7721125262146,
+                "fixed": false,
+                "name": "bt6_v3_800_b1_33",
+                "played": 137
+            },
+            {
+                "elo": 2128.486985525538,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_38",
-                "played": 114
+                "played": 116
             },
             {
-                "elo": 2072.090601843379,
+                "elo": 2077.436681259735,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_28",
-                "played": 134
+                "played": 137
             },
             {
-                "elo": 2022.089812639097,
+                "elo": 2059.671473344957,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_93",
-                "played": 117
+                "played": 124
             },
             {
-                "elo": 1983.482885382804,
+                "elo": 1996.6129226240998,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_23",
-                "played": 105
+                "played": 107
             },
             {
-                "elo": 1955.85123392812,
+                "elo": 1966.2009622077203,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_85",
-                "played": 115
+                "played": 118
             },
             {
-                "elo": 1902.9325196517768,
-                "fixed": false,
-                "name": "bt6_v3_800_b1_18",
-                "played": 103
-            },
-            {
-                "elo": 1892.8105697154851,
-                "fixed": false,
-                "name": "bt6_v3_800_x1_69",
-                "played": 105
-            },
-            {
-                "elo": 1887.014603329792,
+                "elo": 1946.7906937896994,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_77",
+                "played": 116
+            },
+            {
+                "elo": 1913.2461242407635,
+                "fixed": false,
+                "name": "bt6_v3_800_b1_18",
+                "played": 109
+            },
+            {
+                "elo": 1881.6634219336595,
+                "fixed": false,
+                "name": "bt6_v3_800_x1_69",
                 "played": 111
             },
             {
-                "elo": 1832.6089237487097,
+                "elo": 1874.2660390733283,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_61",
-                "played": 102
+                "played": 109
             },
             {
-                "elo": 1760.1342939226388,
+                "elo": 1828.6111890158513,
                 "fixed": false,
-                "name": "bt6_v3_800_x1_53",
-                "played": 105
+                "name": "bt6_v3_800_b1_90",
+                "played": 100
             },
             {
-                "elo": 1758.647578641399,
+                "elo": 1718.4405000997976,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_13",
-                "played": 107
+                "played": 120
             },
             {
-                "elo": 1670.3442525373566,
+                "elo": 1671.694830344906,
+                "fixed": false,
+                "name": "bt6_v3_800_x1_53",
+                "played": 127
+            },
+            {
+                "elo": 1620.0293903242562,
                 "fixed": false,
                 "name": "bt6_v3_800_h2_47",
-                "played": 103
+                "played": 119
             },
             {
-                "elo": 1526.120025285729,
-                "fixed": false,
-                "name": "bt6_v3_800_b1_8",
-                "played": 107
-            },
-            {
-                "elo": 1518.0595778598336,
+                "elo": 1560.3956081166962,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_37",
-                "played": 117
+                "played": 121
             },
             {
-                "elo": 1465.6000678617838,
+                "elo": 1531.4644582783314,
+                "fixed": false,
+                "name": "bt6_v3_800_b1_8",
+                "played": 112
+            },
+            {
+                "elo": 1455.752959878244,
                 "fixed": false,
                 "name": "bt6_v3_800_h2_39",
-                "played": 105
+                "played": 107
             },
             {
                 "elo": 1378.804475515414,
@@ -161,10 +173,10 @@
                 "played": 107
             },
             {
-                "elo": 1281.2502976692965,
+                "elo": 1281.159019767793,
                 "fixed": false,
                 "name": "bt6_v3_800_h2_31",
-                "played": 105
+                "played": 106
             },
             {
                 "elo": 1245.0213709093305,
@@ -173,10 +185,10 @@
                 "played": 107
             },
             {
-                "elo": 1135.169544933441,
+                "elo": 1133.5903736889811,
                 "fixed": false,
                 "name": "bt6_v3_800_x1_21",
-                "played": 104
+                "played": 105
             },
             {
                 "elo": 1103.856356257673,
@@ -191,16 +203,16 @@
                 "played": 103
             },
             {
-                "elo": 988.7504690688128,
+                "elo": 988.0248064310126,
                 "fixed": false,
                 "name": "bt6_v3_800_b1_3",
-                "played": 104
+                "played": 105
             },
             {
-                "elo": 896.0430262483441,
+                "elo": 895.6667569650328,
                 "fixed": false,
                 "name": "bt6_v3_800_h2_7",
-                "played": 101
+                "played": 102
             },
             {
                 "elo": 871.5760177743495,
@@ -209,22 +221,22 @@
                 "played": 108
             },
             {
-                "elo": 739.1771745413987,
+                "elo": 739.1729573738196,
                 "fixed": false,
                 "name": "simplemcts",
-                "played": 102
+                "played": 103
             },
             {
-                "elo": 600.1642978992742,
+                "elo": 600.1621957716587,
                 "fixed": false,
                 "name": "pymcs",
-                "played": 110
+                "played": 112
             },
             {
                 "elo": 500.0,
                 "fixed": true,
                 "name": "random",
-                "played": 104
+                "played": 105
             }
         ],
         "players__clzlist__": [
