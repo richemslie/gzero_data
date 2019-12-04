@@ -180,6 +180,12 @@ class Runner(object):
 
         self._main(mapping, "../data/elo/bt6.elo")
 
+    def bt7(self):
+        mapping = dict(
+            kt1="go")
+
+        self._main(mapping, "../data/elo/bt7.elo")
+
     def c6(self):
         mapping = dict(
             h1="ro",
@@ -264,7 +270,10 @@ class Runner(object):
     def hex19(self):
         mapping = dict(
             h1="go",
-            t1="co",
+            h2="co",
+            t1="yo",
+            yy="yx",
+            halfpol='cx',
             lalal="bo")
 
         def gen_modifier(name):
@@ -272,6 +281,9 @@ class Runner(object):
 
             if "h1_" in name or "lalal_" in name:
                gen -= 250
+
+            if "h2_" in name:
+               gen += 140
 
             return gen
 

@@ -19,8 +19,8 @@ from ggpzero.battle.common import get_player, run, MatchTooLong
 NUM_GAMES = 20
 MOVE_TIME = 30.0
 RESIGN_PCT = -1
-STARTING_ELO = 1500.0
-MAX_ADD_COUNT = 2
+STARTING_ELO = 4000.0
+MAX_ADD_COUNT = 3
 INITIAL_K = 100.0
 
 CHOOSE_BUCKETS = [10, 20, 30, 40, 50, 60, 80, 100]
@@ -121,8 +121,6 @@ def define_player(game, gen, playouts, version, **extra_opts):
                     depth_temperature_stop=2,
                     random_scale=0.99,
 
-                    minimax_backup_ratio=0.75,
-
                     batch_size=8,
 
                     think_time=MOVE_TIME,
@@ -134,8 +132,6 @@ def define_player(game, gen, playouts, version, **extra_opts):
         opts.update(name="%s_v2" % game,
 
                     puct_constant_root=0.85,
-
-                    minimax_backup_ratio=0.75,
 
                     batch_size=8,
 
@@ -788,6 +784,38 @@ class Runner(object):
 
         gen_elo(match_info, all_players, filename)
 
+    def bt7(self, filename="../data/elo/bt7.elo"):
+        man = manager.get_manager()
+
+        from ggpzero.battle.bt import MatchInfo
+        match_info = MatchInfo(7)
+
+        def dp(g, playouts, v):
+            return define_player("bt7", g, playouts, v,
+                                 depth_temperature_stop=4,
+                                 depth_temperature_start=4,
+                                 random_scale=0.5)
+
+        gens = []
+        for name, num, incr in (["kt1", 2, 4],):
+            while True:
+                gen = "%s_%s" % (name, num)
+                if not man.can_load("bt_7", gen):
+                    print "FAILED TO LOAD GEN", gen
+                    break
+
+                gens.append(gen)
+                num += incr
+
+        all_players = [dp(g, 800, 3) for g in gens]
+
+        random_player = get_player("r", MOVE_TIME)
+        mcs_player = get_player("m", MOVE_TIME, max_iterations=800)
+        simplemcts_player = get_player("s", MOVE_TIME, max_tree_playout_iterations=800)
+        all_players += [random_player, mcs_player, simplemcts_player]
+
+        gen_elo(match_info, all_players, filename)
+
     def reversi_8(self, filename="../data/elo/r8.elo"):
         man = manager.get_manager()
 
@@ -982,6 +1010,7 @@ class Runner(object):
         for name, num, incr, maxg in (["h1", 258, 7, 360],
                                       ["h1", 361, 10, 489],
                                       ["h1", 496, 6, 700],
+                                      ["h2", 255, 6, 500],
                                       ["t1", 5, 5, 100]):
             while True:
                 gen = "%s_%s" % (name, num)
@@ -1006,6 +1035,7 @@ class Runner(object):
                                  random_scale=0.8)
 
         gens += ["lalal_456", "lalal_490", "lalal_603"]
+        gens += ["yy_291", "halfpol_291"]
         all_players += [dp(g, 800, 3) for g in gens]
         gen_elo(match_info, all_players, filename)
 

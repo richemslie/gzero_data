@@ -5,364 +5,550 @@
         ],
         "players": [
             {
-                "elo": 5077.667715248437,
+                "elo": 5840.541389090977,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_628",
-                "played": 106
+                "name": "hex_lg_19_v3_800_h2_417",
+                "played": 117
             },
             {
-                "elo": 4971.7847808976485,
+                "elo": 5789.196346561619,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_634",
-                "played": 121
-            },
-            {
-                "elo": 4926.036983286456,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_640",
+                "name": "hex_lg_19_v3_800_h2_423",
                 "played": 100
             },
             {
-                "elo": 4818.493382961725,
+                "elo": 5657.436272950066,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_616",
-                "played": 144
-            },
-            {
-                "elo": 4817.659911456044,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_622",
-                "played": 108
-            },
-            {
-                "elo": 4683.934699559949,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_610",
-                "played": 123
-            },
-            {
-                "elo": 4560.771156429725,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_598",
-                "played": 121
-            },
-            {
-                "elo": 4542.61124899714,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_580",
-                "played": 137
-            },
-            {
-                "elo": 4536.670306950248,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_592",
-                "played": 149
-            },
-            {
-                "elo": 4528.1588430376,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_586",
+                "name": "hex_lg_19_v3_800_h2_399",
                 "played": 131
             },
             {
-                "elo": 4440.484548467931,
+                "elo": 5647.603697184972,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_574",
-                "played": 157
+                "name": "hex_lg_19_v3_800_h2_393",
+                "played": 139
             },
             {
-                "elo": 4430.655850245763,
+                "elo": 5641.624881631201,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_568",
-                "played": 156
+                "name": "hex_lg_19_v3_800_h2_387",
+                "played": 147
             },
             {
-                "elo": 4414.717130103041,
+                "elo": 5572.476028941813,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_lalal_603",
-                "played": 103
+                "name": "hex_lg_19_v3_800_h2_411",
+                "played": 102
             },
             {
-                "elo": 4401.9973189683515,
+                "elo": 5564.3231847457,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_544",
-                "played": 178
+                "name": "hex_lg_19_v3_800_h2_405",
+                "played": 106
             },
             {
-                "elo": 4378.7741649045765,
+                "elo": 5518.656853039328,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_562",
-                "played": 215
-            },
-            {
-                "elo": 4342.152114029653,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_604",
-                "played": 105
-            },
-            {
-                "elo": 4324.307028330189,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_550",
-                "played": 180
-            },
-            {
-                "elo": 4299.104635402249,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_556",
-                "played": 144
-            },
-            {
-                "elo": 4193.307951895602,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_532",
-                "played": 174
-            },
-            {
-                "elo": 4105.660119822712,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_538",
-                "played": 158
-            },
-            {
-                "elo": 4086.4446338451926,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_526",
-                "played": 164
-            },
-            {
-                "elo": 4078.2604929246713,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_520",
-                "played": 197
-            },
-            {
-                "elo": 3898.334487714524,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_508",
-                "played": 194
-            },
-            {
-                "elo": 3890.6383787175632,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_496",
-                "played": 202
-            },
-            {
-                "elo": 3884.3576840227306,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_514",
-                "played": 163
-            },
-            {
-                "elo": 3788.983344862261,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_502",
-                "played": 177
-            },
-            {
-                "elo": 3676.302715504193,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_lalal_490",
-                "played": 163
-            },
-            {
-                "elo": 3522.318226230653,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_481",
-                "played": 150
-            },
-            {
-                "elo": 3463.5844771949965,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_471",
-                "played": 178
-            },
-            {
-                "elo": 3231.4376751306027,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_461",
-                "played": 142
-            },
-            {
-                "elo": 3187.7385690122333,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_451",
-                "played": 176
-            },
-            {
-                "elo": 3112.0262815182055,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_441",
-                "played": 184
-            },
-            {
-                "elo": 3048.5985012593824,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_431",
-                "played": 183
-            },
-            {
-                "elo": 3036.3566945268904,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_421",
-                "played": 186
-            },
-            {
-                "elo": 3004.8177683610515,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_411",
-                "played": 184
-            },
-            {
-                "elo": 2802.27506491435,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_401",
-                "played": 197
-            },
-            {
-                "elo": 2718.519819614363,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_391",
-                "played": 169
-            },
-            {
-                "elo": 2637.411889177117,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_356",
-                "played": 208
-            },
-            {
-                "elo": 2624.1741163660845,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_lalal_456",
+                "name": "hex_lg_19_v3_800_h2_357",
                 "played": 145
             },
             {
-                "elo": 2598.96689046749,
+                "elo": 5504.429897227671,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_361",
-                "played": 223
+                "name": "hex_lg_19_v3_800_h2_381",
+                "played": 163
             },
             {
-                "elo": 2597.156387519552,
+                "elo": 5495.718667120693,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_381",
-                "played": 182
+                "name": "hex_lg_19_v3_800_h2_375",
+                "played": 145
             },
             {
-                "elo": 2591.70913550891,
+                "elo": 5436.62795334866,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_371",
-                "played": 183
+                "name": "hex_lg_19_v3_800_h2_369",
+                "played": 131
             },
             {
-                "elo": 2531.7662930022607,
+                "elo": 5350.922028906813,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_349",
-                "played": 194
+                "name": "hex_lg_19_v3_800_h2_351",
+                "played": 179
             },
             {
-                "elo": 2350.6483443927145,
+                "elo": 5343.436678893403,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_342",
-                "played": 198
+                "name": "hex_lg_19_v3_800_h2_333",
+                "played": 137
             },
             {
-                "elo": 2199.0402142184416,
+                "elo": 5337.393954561517,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_335",
-                "played": 204
+                "name": "hex_lg_19_v3_800_h2_345",
+                "played": 155
             },
             {
-                "elo": 2056.7432067436243,
+                "elo": 5321.030988993165,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_328",
-                "played": 177
+                "name": "hex_lg_19_v3_800_h2_363",
+                "played": 145
             },
             {
-                "elo": 1998.7977628874207,
+                "elo": 5258.34759779082,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_321",
-                "played": 202
-            },
-            {
-                "elo": 1769.6298863859972,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_314",
-                "played": 188
-            },
-            {
-                "elo": 1589.39037840932,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_300",
+                "name": "hex_lg_19_v3_800_h2_309",
                 "played": 168
             },
             {
-                "elo": 1587.363887873334,
+                "elo": 5230.400604329244,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_307",
-                "played": 169
-            },
-            {
-                "elo": 1552.3957652725746,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_293",
-                "played": 161
-            },
-            {
-                "elo": 1238.3900090557365,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_286",
-                "played": 171
-            },
-            {
-                "elo": 1228.0019447546206,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_279",
-                "played": 167
-            },
-            {
-                "elo": 1049.1410595296416,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_272",
-                "played": 162
-            },
-            {
-                "elo": 1023.4509381886505,
-                "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_265",
-                "played": 149
-            },
-            {
-                "elo": 854.0875246852459,
-                "fixed": false,
-                "name": "simplemcts",
+                "name": "hex_lg_19_v3_800_h2_303",
                 "played": 175
             },
             {
-                "elo": 852.2725025920676,
+                "elo": 5214.9265395766515,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_t1_5",
-                "played": 171
+                "name": "hex_lg_19_v3_800_h2_327",
+                "played": 132
             },
             {
-                "elo": 716.9127280359324,
+                "elo": 5214.792386519349,
                 "fixed": false,
-                "name": "hex_lg_19_v3_800_h1_258",
+                "name": "hex_lg_19_v3_800_h2_339",
+                "played": 142
+            },
+            {
+                "elo": 5179.594152506061,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_321",
+                "played": 130
+            },
+            {
+                "elo": 5157.464862620895,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_297",
+                "played": 182
+            },
+            {
+                "elo": 5126.520274790046,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_315",
+                "played": 154
+            },
+            {
+                "elo": 5051.238640508068,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_291",
+                "played": 156
+            },
+            {
+                "elo": 4988.795346521521,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_285",
+                "played": 166
+            },
+            {
+                "elo": 4968.385166857414,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_273",
+                "played": 154
+            },
+            {
+                "elo": 4949.569767800552,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_279",
+                "played": 182
+            },
+            {
+                "elo": 4940.306365420099,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_267",
                 "played": 161
             },
             {
-                "elo": 640.8196188309403,
+                "elo": 4904.153895127059,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_261",
+                "played": 165
+            },
+            {
+                "elo": 4830.293349078135,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_628",
+                "played": 183
+            },
+            {
+                "elo": 4814.667284742152,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_640",
+                "played": 154
+            },
+            {
+                "elo": 4775.737763260214,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h2_255",
+                "played": 154
+            },
+            {
+                "elo": 4730.3961421058075,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_634",
+                "played": 188
+            },
+            {
+                "elo": 4722.414042234619,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_622",
+                "played": 157
+            },
+            {
+                "elo": 4608.06381986538,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_616",
+                "played": 181
+            },
+            {
+                "elo": 4551.005524034964,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_610",
+                "played": 158
+            },
+            {
+                "elo": 4478.869886635691,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_580",
+                "played": 160
+            },
+            {
+                "elo": 4471.032770292833,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_598",
+                "played": 148
+            },
+            {
+                "elo": 4432.563327287266,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_586",
+                "played": 164
+            },
+            {
+                "elo": 4402.977263093388,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_592",
+                "played": 186
+            },
+            {
+                "elo": 4391.364107374626,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_568",
+                "played": 174
+            },
+            {
+                "elo": 4364.428806047867,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_lalal_603",
+                "played": 132
+            },
+            {
+                "elo": 4338.122561474172,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_574",
+                "played": 183
+            },
+            {
+                "elo": 4320.684974309488,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_544",
+                "played": 202
+            },
+            {
+                "elo": 4304.239049913158,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_562",
+                "played": 235
+            },
+            {
+                "elo": 4300.260961250761,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_604",
+                "played": 129
+            },
+            {
+                "elo": 4267.768027922509,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_556",
+                "played": 181
+            },
+            {
+                "elo": 4196.569269651,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_550",
+                "played": 206
+            },
+            {
+                "elo": 4106.468884547933,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_532",
+                "played": 204
+            },
+            {
+                "elo": 4015.005314095729,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_520",
+                "played": 227
+            },
+            {
+                "elo": 4012.0433015457024,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_526",
+                "played": 199
+            },
+            {
+                "elo": 3989.494834173135,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_538",
+                "played": 187
+            },
+            {
+                "elo": 3858.2158877540564,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_514",
+                "played": 182
+            },
+            {
+                "elo": 3826.7493745547313,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_496",
+                "played": 229
+            },
+            {
+                "elo": 3781.321864489735,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_508",
+                "played": 224
+            },
+            {
+                "elo": 3776.785367404529,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_502",
+                "played": 220
+            },
+            {
+                "elo": 3607.4336691623716,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_lalal_490",
+                "played": 198
+            },
+            {
+                "elo": 3606.2788488199785,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_halfpol_291",
+                "played": 118
+            },
+            {
+                "elo": 3463.682363467335,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_yy_291",
+                "played": 111
+            },
+            {
+                "elo": 3408.9427375982686,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_481",
+                "played": 193
+            },
+            {
+                "elo": 3286.4494274953972,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_471",
+                "played": 223
+            },
+            {
+                "elo": 3216.2462223587386,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_461",
+                "played": 180
+            },
+            {
+                "elo": 3125.499536703014,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_451",
+                "played": 197
+            },
+            {
+                "elo": 3060.2525055265864,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_441",
+                "played": 211
+            },
+            {
+                "elo": 3032.702016694272,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_431",
+                "played": 208
+            },
+            {
+                "elo": 2991.662336380093,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_421",
+                "played": 205
+            },
+            {
+                "elo": 2955.229366746014,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_411",
+                "played": 207
+            },
+            {
+                "elo": 2748.00137074673,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_401",
+                "played": 220
+            },
+            {
+                "elo": 2692.4760813644943,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_391",
+                "played": 198
+            },
+            {
+                "elo": 2628.4655471389474,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_356",
+                "played": 234
+            },
+            {
+                "elo": 2619.568950061845,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_lalal_456",
+                "played": 162
+            },
+            {
+                "elo": 2605.102054589324,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_381",
+                "played": 205
+            },
+            {
+                "elo": 2574.914168141768,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_371",
+                "played": 208
+            },
+            {
+                "elo": 2559.9477665346335,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_361",
+                "played": 242
+            },
+            {
+                "elo": 2500.6751166060844,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_349",
+                "played": 221
+            },
+            {
+                "elo": 2329.6847919495553,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_342",
+                "played": 220
+            },
+            {
+                "elo": 2177.4997411843906,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_335",
+                "played": 225
+            },
+            {
+                "elo": 2043.1569784642052,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_328",
+                "played": 205
+            },
+            {
+                "elo": 1975.5270030515687,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_321",
+                "played": 228
+            },
+            {
+                "elo": 1753.9219539652217,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_314",
+                "played": 208
+            },
+            {
+                "elo": 1584.9962556562211,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_300",
+                "played": 183
+            },
+            {
+                "elo": 1581.6857868038765,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_307",
+                "played": 182
+            },
+            {
+                "elo": 1546.0629140788672,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_293",
+                "played": 189
+            },
+            {
+                "elo": 1238.3858900472544,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_286",
+                "played": 181
+            },
+            {
+                "elo": 1227.9283333209548,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_279",
+                "played": 185
+            },
+            {
+                "elo": 1049.1410593665523,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_272",
+                "played": 178
+            },
+            {
+                "elo": 1023.0368291624454,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_265",
+                "played": 169
+            },
+            {
+                "elo": 854.087524624254,
+                "fixed": false,
+                "name": "simplemcts",
+                "played": 189
+            },
+            {
+                "elo": 852.2423394519217,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_t1_5",
+                "played": 182
+            },
+            {
+                "elo": 716.8690945335655,
+                "fixed": false,
+                "name": "hex_lg_19_v3_800_h1_258",
+                "played": 177
+            },
+            {
+                "elo": 640.8183477066113,
                 "fixed": false,
                 "name": "hex_lg_19_v3_800_t1_10",
-                "played": 154
+                "played": 179
             },
             {
                 "elo": 500.0,
                 "fixed": true,
                 "name": "random",
-                "played": 222
+                "played": 238
             }
         ],
         "players__clzlist__": [
