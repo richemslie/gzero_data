@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/10/07 16:16",
+        "draw_head": true,
+        "game": "draughts_killer_10x10",
+        "multiple_policy_heads": true,
+        "name": "f1_581",
+        "num_previous_states": 1,
+        "trained_losses": "value_loss = 0.1555, policy_1_loss = 0.7079, loss = 1.7558, policy_0_loss = 0.7112",
+        "trained_policy_accuracy": "combined policy accuracy 0.5962/0.6090",
+        "trained_validation_losses": "val_value_loss = 0.1554, val_policy_1_loss = 0.7014, val_policy_0_loss = 0.6997, val_loss = 1.7373",
+        "trained_value_accuracy": "score accuracy 0.6142 / 0.6151",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
