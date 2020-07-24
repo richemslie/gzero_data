@@ -1,0 +1,20 @@
+{
+    "obj": {
+        "channel_last": false,
+        "date_created": "2019/12/09 04:33",
+        "draw_head": false,
+        "game": "hex_lg_19",
+        "multiple_policy_heads": true,
+        "name": "h2_477",
+        "num_previous_states": 1,
+        "trained_losses": "value_loss = 0.1971, policy_1_loss = 1.4682, loss = 1.5384, policy_0_loss = 1.4557",
+        "trained_policy_accuracy": "combined policy accuracy 0.5268/0.5423",
+        "trained_validation_losses": "val_value_loss = 0.1995, val_policy_1_loss = 1.4335, val_policy_0_loss = 1.4340, val_loss = 1.5108",
+        "trained_value_accuracy": "score accuracy 0.6764 / 0.6709",
+        "transformer_description": null
+    },
+    "obj__clz__": [
+        "ggpzero.defs.datadesc",
+        "GenerationDescription"
+    ]
+}
